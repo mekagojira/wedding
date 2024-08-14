@@ -41,7 +41,7 @@ export const WeGettingMarried = () => {
                     </div>
                     <div className="pt-8 md:pt-16" />
                     <div className="text-center text-theme-main font-['Hurricane'] italic text-4xl md:text-5xl">
-                        Thùy Linh & Đức Mạnh
+                        Đức Mạnh & Thùy Linh
                     </div>
                 </div>
                 <div className="block md:hidden">

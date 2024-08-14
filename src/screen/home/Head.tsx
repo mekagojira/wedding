@@ -20,10 +20,10 @@ export const HomeHead = () => {
                             </div>
                             <div className="pt-4 md:pt-8" />
                             <div className="text-4xl md:text-6xl flex">
-                                Thùy Linh <span className="ml-1 md:ml-4" />
+                                Đức Mạnh <span className="ml-1 md:ml-4" />
                                 <IoHeart color="white" />
                                 <span className="mr-1 md:mr-3" />
-                                Đức Mạnh
+                                Thùy Linh
                             </div>
                             <div className="pt-4 md:pt-8" />
                             <div className="text-3xl md:text-4xl px-8 py-4 border-2 border-white shadow-2xl focus:bg-white focus:text-transparent active:bg-white active:text-border-theme-main transition-all">
