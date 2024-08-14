@@ -13,7 +13,7 @@ export const HomeHead = () => {
                     className="h-full bg-center bg-cover transition-all"
                     style={{ background: `url(${img})` }}
                 >
-                    <div className="relative w-full h-full flex flex-wrap items-end justify-center pb-8 md:pb-32">
+                    <div className="relative w-full h-full flex flex-wrap items-end justify-center pb-16 md:pb-32">
                         <div className="text-center font-['Old+Standard+TT'] text-white">
                             <div className="text-2xl font-['Montserrat']">
                                 SAVE THE DATE
