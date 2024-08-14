@@ -71,7 +71,7 @@ export const WeGettingMarried = () => {
                         We are getting married
                     </div>
                     <div className="pt-8 md:pt-16" />
-                    <div className="text-justify text-theme-second">
+                    <div className="text-justify text-theme-second font-['Playfair+Display']">
                         Thật vui vì được gặp và đón tiếp các bạn trong một dịp
                         đặc biệt như đám cưới của chúng tôi. Chúng tôi muốn gửi
                         đến bạn những lời cảm ơn sâu sắc nhất và để bạn biết
@@ -81,7 +81,7 @@ export const WeGettingMarried = () => {
                     </div>
                     <div className="pt-8 md:pt-16" />
                     <div className="text-center text-theme-main font-['Hurricane'] italic text-4xl md:text-5xl">
-                        Thùy Linh & Đức Mạnh
+                        Đức Mạnh & Thùy Linh
                     </div>
                 </div>
             </div>
