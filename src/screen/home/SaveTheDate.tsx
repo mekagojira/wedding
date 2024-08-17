@@ -8,7 +8,7 @@ export const SaveTheDate = () => {
                 <div className="text-xl font-thin">
                     Đến dự buổi tiệc chung vui của chúng tôi tại
                 </div>
-                <div className=" font-['Hurricane'] text-4xl md:text-8xl my-4 md:my-8">
+                <div className=" font-lovers text-4xl md:text-8xl my-4 md:my-8">
                     W.Jardin
                 </div>
                 <div className="text-lg">307 Nguyễn Văn Linh</div>
@@ -23,7 +23,7 @@ export const SaveTheDate = () => {
                     </button>
                 </div>
                 <div className="pt-8" />
-                <div className="text-2xl md:text-6xl font-bold font-viao">
+                <div className="text-3xl md:text-6xl font-bold font-viao">
                     22 . 09 . 2024
                 </div>
                 <div className="pt-8" />
