@@ -14,7 +14,7 @@ export const HomeHead = () => {
                     style={{ background: `url(${img})` }}
                 >
                     <div className="relative w-full h-full flex flex-wrap items-end justify-center pb-16 md:pb-32">
-                        <div className="text-center font-['Old+Standard+TT'] text-white">
+                        <div className="text-center font-old-standard text-white">
                             <div className="text-2xl font-['Montserrat']">
                                 SAVE THE DATE
                             </div>

@@ -6,6 +6,11 @@ export default {
             sans: ['Inter', 'ui-sans-serif', 'system-ui'],
         },
         extend: {
+            fontFamily: {
+                viao: ['Viaoda Libre'],
+                lovers: ['Lovers+Quarrel'],
+                'old-standard': ['Old Standard TT'],
+            },
             colors: {
                 theme: {
                     main: '#7a0707',
