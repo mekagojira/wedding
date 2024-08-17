@@ -8,11 +8,20 @@ export const SaveTheDate = () => {
                 <div className="text-xl font-thin">
                     Đến dự buổi tiệc chung vui của chúng tôi tại
                 </div>
-                <div className=" font-['Hurricane'] text-2xl md:text-8xl my-4 md:my-8">
+                <div className=" font-['Hurricane'] text-4xl md:text-8xl my-4 md:my-8">
                     W.Jardin
                 </div>
                 <div className="text-lg">307 Nguyễn Văn Linh</div>
                 <div className="text-lg">Dư Hàng Kênh, Lê Chân, Hải Phòng</div>
+                <div className="pt-2 flex flex-col items-center justify-between uppercase font-['Montserrat']">
+                    <button className="w-56 border-2 text-theme-main border-theme-main hover:bg-theme-main transition-all text-base hover:text-theme-bg px-6 py-1">
+                        XEM BẢN ĐỒ
+                    </button>
+                    <div className="pt-2" />
+                    <button className="w-56 border-2 text-theme-main border-theme-main hover:bg-theme-main transition-all text-base hover:text-theme-bg px-6 py-1">
+                        XÁC NHẬN THAM DỰ
+                    </button>
+                </div>
                 <div className="pt-8" />
                 <div className="text-2xl md:text-6xl">22 . 09 . 2024</div>
                 <div className="pt-8" />
@@ -22,7 +31,7 @@ export const SaveTheDate = () => {
                 </div>
             </div>
 
-            <div className="pt-4 md:pt-16" />
+            <div className="pt-16 md:pt-32" />
 
             <div className="flex items-center justify-center">
                 <div className="w-full md:w-1/2">
