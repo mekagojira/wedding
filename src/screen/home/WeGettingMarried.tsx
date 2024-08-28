@@ -1,28 +1,25 @@
 import ScrollAnimation from 'react-animate-on-scroll'
+import { Section } from 'component/section/Section.tsx'
 
 export const WeGettingMarried = () => {
     return (
         <ScrollAnimation animateIn="bounceInUp" animateOnce duration={2}>
-            <div className="container mx-auto px-4 md:px-0">
+            <Section>
                 <div className="hidden md:block">
                     <div className="flex justify-center items-center">
                         <div
-                            className="bg-center bg-cover border-2 border-theme-main shadow-xl"
-                            style={{
-                                width: '30vw',
-                                height: '30vw',
-                                backgroundImage: `url(/img/linh-1.png)`,
-                            }}
-                        />
-                        <div className="pl-8" />
-                        <div
-                            className="bg-center bg-cover border-2 border-theme-main shadow-xl"
-                            style={{
-                                width: '30vw',
-                                height: '30vw',
-                                backgroundImage: `url(/img/linh-2.png)`,
-                            }}
-                        />
+                        // className="bg-center bg-cover border-2 border-theme-main shadow-xl"
+                        // style={{
+                        //     width: '80vw',
+                        //     height: '25vh',
+                        //     backgroundImage: `url(/img/manhlinh-03.JPG)`,
+                        // }}
+                        >
+                            <img
+                                src={'/img/manhlinh-03.JPG'}
+                                className="shadow-lg rounded-lg"
+                            />
+                        </div>
                     </div>
                     <div className="pt-12 md:pt-24" />
                     <div className="text-center text-theme-main font-['Montserrat'] font-bold text-xl md:text-3xl">
@@ -84,7 +81,7 @@ export const WeGettingMarried = () => {
                         Đức Mạnh & Thùy Linh
                     </div>
                 </div>
-            </div>
+            </Section>
         </ScrollAnimation>
     )
 }

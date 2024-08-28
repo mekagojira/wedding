@@ -2,7 +2,7 @@ import Calendar from 'react-calendar'
 
 export const SaveTheDate = () => {
     return (
-        <div className="container flex flex-col justify-center h-screen mx-auto px-4 md:px-0">
+        <div className="section container flex flex-col justify-center h-screen mx-auto px-4 md:px-0">
             <div className="text-center font-old-standard md:text-2xl">
                 <div className="text-xl font-thin">Trân trọng kính mời</div>
                 <div className="text-xl font-thin">
