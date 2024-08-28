@@ -49,7 +49,7 @@ export const HomeHead = () => {
                         backgroundPosition: 'center 40%',
                     }}
                 >
-                    <div className="relative w-full h-full flex flex-wrap items-end justify-center pb-16">
+                    <div className="relative w-full h-full flex flex-wrap items-end justify-center pb-20">
                         <div className="text-center font-viao text-theme-bg">
                             <div className="text-2xl font-bold font-['Montserrat']">
                                 SAVE THE DATE
