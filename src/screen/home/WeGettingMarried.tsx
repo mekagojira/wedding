@@ -41,26 +41,11 @@ export const WeGettingMarried = () => {
                         Đức Mạnh & Thùy Linh
                     </div>
                 </div>
-                <div className="block md:hidden">
+                <div className="flex flex-col justify-center md:hidden min-h-screen">
                     <div className="flex justify-center items-center">
-                        <div
-                            className="bg-center bg-cover border-2 border-theme-main shadow-xl"
-                            style={{
-                                width: '95vw',
-                                height: '95vw',
-                                backgroundImage: `url(/img/linh-1.png)`,
-                            }}
-                        />
-                    </div>
-                    <div className="pt-8" />
-                    <div className="flex justify-center items-center">
-                        <div
-                            className="bg-center bg-cover border-2 border-theme-main shadow-xl"
-                            style={{
-                                width: '95vw',
-                                height: '95vw',
-                                backgroundImage: `url(/img/linh-2.png)`,
-                            }}
+                        <img
+                            src={'/img/manhlinh-03.JPG'}
+                            className="shadow-lg rounded-lg"
                         />
                     </div>
                     <div className="pt-12 md:pt-24" />
