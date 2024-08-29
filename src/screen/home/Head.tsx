@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { IoHeart } from 'react-icons/io5'
+import { Section } from 'component/section/Section.tsx'
 
 export const HomeHead = () => {
     const images = [
@@ -10,7 +11,7 @@ export const HomeHead = () => {
     const [img] = useState(images[0])
 
     return (
-        <div>
+        <Section>
             <div className="h-screen">
                 <div
                     className="h-full transition-all block md:hidden"
@@ -71,6 +72,6 @@ export const HomeHead = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </Section>
     )
 }

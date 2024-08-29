@@ -1,3 +1,5 @@
+import { Section } from 'component/section/Section.tsx'
+
 export const Event = () => {
-    return <div>{/*<div>Sự kiện</div>*/}</div>
+    return <Section>{/*<div>Sự kiện</div>*/}</Section>
 }
