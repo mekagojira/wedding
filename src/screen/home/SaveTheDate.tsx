@@ -30,11 +30,11 @@ export const SaveTheDate = () => {
                     <div className="text-3xl md:text-6xl font-bold font-viao">
                         22 . 09 . 2024
                     </div>
-                    <div className="pt-8" />
-                    <div className="text-xl font-thin">
-                        Sự hiện diện của quý khách là niềm vinh hạnh cho gia
-                        đình chúng tôi.
-                    </div>
+                    {/*<div className="pt-8" />*/}
+                    {/*<div className="text-xl font-thin">*/}
+                    {/*    Sự hiện diện của quý khách là niềm vinh hạnh cho gia*/}
+                    {/*    đình chúng tôi.*/}
+                    {/*</div>*/}
                 </div>
 
                 <div className="pt-16 md:pt-32" />
