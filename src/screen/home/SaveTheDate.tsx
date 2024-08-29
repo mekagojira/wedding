@@ -37,7 +37,7 @@ export const SaveTheDate = () => {
                     {/*</div>*/}
                 </div>
 
-                <div className="pt-16 md:pt-32" />
+                <div className="pt-8 md:pt-16" />
 
                 <div className="text-theme-main text-2xl font-old-standard italic font-black text-center underline">
                     September 2024
