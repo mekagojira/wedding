@@ -12,8 +12,9 @@ body {
   min-height: -webkit-fill-available;
 }
 
-html {
+body {
   height: -webkit-fill-available;
+  height: 100%;
 }
 
 .react-calendar__tile--active {
@@ -39,4 +40,5 @@ html {
 .section {
   scroll-snap-align: start;
   height: 100vh;
+  min-height: -webkit-fill-available;
 }
