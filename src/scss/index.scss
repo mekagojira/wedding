@@ -35,10 +35,18 @@ body {
   max-width: 1600px;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+
+  @supports (-webkit-touch-callout: none) {
+    height: 100dvh;
+  }
 }
 
 .section {
   scroll-snap-align: start;
   height: 100vh;
   min-height: -webkit-fill-available;
+
+  @supports (-webkit-touch-callout: none) {
+    height: 100dvh;
+  }
 }
