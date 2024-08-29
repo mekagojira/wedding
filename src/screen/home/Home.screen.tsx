@@ -4,6 +4,7 @@ import { SaveTheDate } from 'screen/home/SaveTheDate.tsx'
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { PiCatLight } from 'react-icons/pi'
 
 export const HomeScreen = () => {
     const el = useRef(null)
@@ -30,6 +31,13 @@ export const HomeScreen = () => {
             <HomeHead />
             <WeGettingMarried />
             <SaveTheDate />
+            <div className="fixed right-0 bottom-0 p-4">
+                <button className="py-1 px-4 bg-theme-main text-theme-bg rounded shadow-xl flex items-center">
+                    <PiCatLight size={32} />
+                    <span className="pl-4" />
+                    Xác nhận tham dự
+                </button>
+            </div>
         </main>
     )
 }
