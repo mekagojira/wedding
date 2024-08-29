@@ -10,7 +10,7 @@ export const SaveTheDate = () => {
                     <div className="text-xl font-thin">
                         Đến dự buổi tiệc chung vui của chúng tôi tại
                     </div>
-                    <div className=" font-lovers text-4xl md:text-8xl my-4 md:my-8">
+                    <div className=" font-lovers text-4xl md:text-8xl my-4 md:my-8 text-theme-main">
                         W.Jardin
                     </div>
                     <div className="text-md">307 Nguyễn Văn Linh</div>
