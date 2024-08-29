@@ -1,12 +1,17 @@
 import { HomeHead } from 'screen/home/Head.tsx'
 import { WeGettingMarried } from 'screen/home/WeGettingMarried.tsx'
 import { SaveTheDate } from 'screen/home/SaveTheDate.tsx'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { PiCatLight } from 'react-icons/pi'
+import { Modal } from 'screen/home/Modal.tsx'
 
 export const HomeScreen = () => {
+    const [openModal, setOpenModal] = useState<boolean>(false)
+
+    const toggle = () => setOpenModal(!openModal)
+
     const el = useRef(null)
     const child = gsap.utils.selector(el)
     const tl = gsap.timeline()
@@ -31,8 +36,12 @@ export const HomeScreen = () => {
             <HomeHead />
             <WeGettingMarried />
             <SaveTheDate />
+            <Modal show={openModal} toggle={toggle} />
             <div className="fixed right-0 bottom-0 p-4">
-                <button className="py-1 px-4 bg-theme-main text-theme-bg rounded shadow-xl flex items-center">
+                <button
+                    onClick={toggle}
+                    className="py-1 px-4 bg-theme-main text-theme-bg rounded shadow-xl flex items-center"
+                >
                     <PiCatLight size={32} />
                     <span className="pl-4" />
                     Xác nhận tham dự

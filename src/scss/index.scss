@@ -41,6 +41,12 @@ body {
   }
 }
 
+input {
+  outline: none;
+  &:active {
+    outline: none;
+  }
+}
 .section {
   scroll-snap-align: start;
   height: 100vh;
