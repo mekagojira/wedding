@@ -45,6 +45,7 @@ export const WeGettingMarried = () => {
             <div className="flex flex-col justify-center md:hidden min-h-screen">
                 <div className="flex justify-center items-center">
                     <img
+                        alt={''}
                         src={'/img/manhlinh-03.JPG'}
                         className="shadow-lg rounded-lg"
                     />
