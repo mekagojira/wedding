@@ -13,22 +13,18 @@ export const SaveTheDate = () => {
                     <div className=" font-lovers text-4xl md:text-8xl my-4 md:my-8">
                         W.Jardin
                     </div>
-                    <div className="text-lg">307 Nguyễn Văn Linh</div>
-                    <div className="text-lg">
+                    <div className="text-md">307 Nguyễn Văn Linh</div>
+                    <div className="text-md">
                         Dư Hàng Kênh, Lê Chân, Hải Phòng
                     </div>
-                    <div className="pt-2 flex flex-col items-center justify-between uppercase font-['Montserrat']">
-                        <button className="w-56 border-2 text-theme-main border-theme-main hover:bg-theme-main transition-all text-base hover:text-theme-bg px-6 py-1">
-                            XEM BẢN ĐỒ
-                        </button>
-                        <div className="pt-2" />
-                        <button className="w-56 border-2 text-theme-main border-theme-main hover:bg-theme-main transition-all text-base hover:text-theme-bg px-6 py-1">
-                            XÁC NHẬN THAM DỰ
-                        </button>
-                    </div>
-                    <div className="pt-8" />
-                    <div className="text-3xl md:text-6xl font-bold font-viao">
-                        22 . 09 . 2024
+                    <div className="pt-4" />
+                    <div className="border-t-2 border-b-2 border-theme-main py-2">
+                        <div className="text-md font-thin uppercase">
+                            vào lúc 11:00 - Chủ Nhật
+                        </div>
+                        <div className="text-3xl md:text-6xl font-bold">
+                            22 . 09 . 2024
+                        </div>
                     </div>
                     {/*<div className="pt-8" />*/}
                     {/*<div className="text-xl font-thin">*/}
@@ -37,7 +33,7 @@ export const SaveTheDate = () => {
                     {/*</div>*/}
                 </div>
 
-                <div className="pt-8 md:pt-16" />
+                <div className="pt-4 md:pt-16" />
 
                 <div className="border-4 border-theme-main">
                     <div className="text-xl font-old-standard uppercase font-black text-center p-2 bg-theme-main text-theme-bg">
@@ -58,6 +54,16 @@ export const SaveTheDate = () => {
                             />
                         </div>
                     </div>
+                </div>
+                <div className="pt-4" />
+                <div className="pt-2 flex flex-col items-center justify-between uppercase font-['Montserrat']">
+                    <button className="w-56 border-2 text-theme-main border-theme-main hover:bg-theme-main transition-all text-base hover:text-theme-bg px-6 py-1">
+                        XEM BẢN ĐỒ
+                    </button>
+                    <div className="pt-2" />
+                    <button className="w-56 border-2 text-theme-main border-theme-main hover:bg-theme-main transition-all text-base hover:text-theme-bg px-6 py-1">
+                        XÁC NHẬN THAM DỰ
+                    </button>
                 </div>
             </div>
         </Section>
