@@ -3,7 +3,7 @@ import { Section } from 'component/section/Section.tsx'
 
 export const SaveTheDate = () => {
     return (
-        <Section container>
+        <Section>
             <div className="flex flex-col justify-center h-screen mx-auto px-4 md:px-0">
                 <div className="text-center font-old-standard md:text-2xl">
                     <div className="text-xl font-thin">Trân trọng kính mời</div>
@@ -39,19 +39,24 @@ export const SaveTheDate = () => {
 
                 <div className="pt-8 md:pt-16" />
 
-                <div className="text-theme-main text-2xl font-old-standard italic font-black text-center underline">
-                    September 2024
-                </div>
-                <div className="pt-4" />
-                <div className="flex items-center justify-center">
-                    <div className="w-full md:w-1/2">
-                        <Calendar
-                            showNeighboringMonth={false}
-                            value={new Date('2024-09-22')}
-                            showNavigation={false}
-                            locale={'vi-vn'}
-                            tileClassName="p-2 text-md font-['Montserrat']"
-                        />
+                <div className="border-4 border-theme-main">
+                    <div className="text-xl font-old-standard uppercase font-black text-center p-2 bg-theme-main text-theme-bg">
+                        September 2024
+                    </div>
+                    <div className="flex justify-center">
+                        <div className="w-full border border-theme-main" />
+                    </div>
+                    <div className="pt-4" />
+                    <div className="flex items-center justify-center px-2">
+                        <div className="w-full md:w-1/2">
+                            <Calendar
+                                showNeighboringMonth={false}
+                                value={new Date('2024-09-22')}
+                                showNavigation={false}
+                                locale={'vi-vn'}
+                                tileClassName="p-2 text-md font-['Montserrat']"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
