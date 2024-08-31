@@ -22,12 +22,11 @@ export const WeGettingMarried = () => {
                             src={'/img/manhlinh-03.JPG'}
                             className="shadow-lg md:w-1/2"
                         />
-                    </div> 
+                    </div>
                     <div className="text-center text-theme-main font-['Corinthia'] italic text-4xl py-4">
                         Đức Mạnh -Thùy Linh
                     </div>
                     <div className="container mx-auto px-4 md:px-0">
-                        <div className="pt-2" />
                         <motion.div
                             initial={{ x: 0, y: 200 }}
                             whileInView={{ x: 0, y: 0 }}
