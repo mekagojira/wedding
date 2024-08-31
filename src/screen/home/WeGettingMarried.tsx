@@ -4,7 +4,7 @@ export const WeGettingMarried = () => {
     return (
         <>
             <Section container>
-                <div className="flex flex-col justify-center md:hidden min-h-screen">
+                <div className="flex flex-col pt-16 md:hidden min-h-screen">
                     <div className="flex justify-center items-center">
                         <img
                             alt={''}

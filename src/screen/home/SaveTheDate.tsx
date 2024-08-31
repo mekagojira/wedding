@@ -12,7 +12,7 @@ export const SaveTheDate = () => {
 
     return (
         <Section>
-            <div className="flex flex-col justify-center h-screen mx-auto px-4 md:px-0">
+            <div className="flex flex-col pt-16 h-screen mx-auto px-4 md:px-0">
                 <div className="text-center font-old-standard md:text-2xl">
                     <div className="text-xl font-thin">
                         Trân trọng kính mời {guest || 'bạn'}

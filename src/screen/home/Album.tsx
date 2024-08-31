@@ -26,7 +26,7 @@ export function Album() {
     return (
         <Section container>
             <div className="flex h-screen items-center flex-col">
-                <div className="pt-8" />
+                <div className="pt-2" />
                 <div
                     onClick={fullscreen}
                     className="font-viao text-2xl text-center uppercase shadow-lg font-black bg-theme-main text-theme-bg px-3 py-2"
