@@ -41,12 +41,14 @@ export const SaveTheDate = () => {
                             Dư Hàng Kênh, Lê Chân, Hải Phòng
                         </div>
                         <div className="pt-4" />
-                        <div className="border-t-2 border-b-2 border-theme-main py-2">
-                            <div className="text-md font-thin uppercase">
-                                vào lúc 11:00 - Chủ Nhật
-                            </div>
-                            <div className="text-3xl md:text-6xl font-bold">
-                                22 . 09 . 2024
+                        <div className="flex flex-col items-center">
+                            <div className="border-t-2 border-b-2 border-theme-main py-2 w-fit px-8">
+                                <div className="text-md font-thin uppercase">
+                                    vào lúc 11:00 - Chủ Nhật
+                                </div>
+                                <div className="text-3xl md:text-6xl font-bold">
+                                    22 . 09 . 2024
+                                </div>
                             </div>
                         </div>
                         {/*<div className="pt-8" />*/}
