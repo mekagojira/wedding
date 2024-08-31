@@ -1,19 +1,16 @@
 import { Section } from 'component/section/Section.tsx'
 import { HiHeart } from 'react-icons/hi'
 import { motion } from 'framer-motion'
+import { Divider } from 'component/section/Divider.tsx'
 
 export const WeGettingMarried = () => {
     return (
         <>
             <Section>
-                <div className="flex flex-col items-center min-h-screen">
-                    <div className="flex items-center justify-start py-4">
-                        <img
-                            src={'/assets/bg-2.png'}
-                            alt={''}
-                            className="w-full rotate-180 w-5/6 -translate-x-4"
-                        />
-                    </div>
+                <div className="py-8">
+                    <Divider r={true} />
+                </div>
+                <div className="flex flex-col items-center">
                     <div className="text-center text-theme-main font-viao text-2xl font-bold flex pb-4">
                         <div className="-rotate-45">
                             <HiHeart size={24} />
@@ -23,12 +20,11 @@ export const WeGettingMarried = () => {
                             <HiHeart size={24} />
                         </div>
                     </div>
-                    <div className="pt-4" />
-                    <div className="flex justify-center items-center">
+                    <div className="flex p-4 justify-center items-center">
                         <img
                             alt={''}
                             src={'/img/manhlinh-03.JPG'}
-                            className="shadow-lg md:w-1/2"
+                            className="shadow-lg rounded shadow-xl"
                         />
                     </div>
                     <div className="text-center text-theme-main font-['Corinthia'] italic text-5xl py-8">
@@ -56,13 +52,8 @@ export const WeGettingMarried = () => {
                             </div>
                         </motion.div>
                     </div>
-                    <div className="pt-4" />
-                    <div className="flex items-center justify-end py-8">
-                        <img
-                            src={'/assets/bg-2.png'}
-                            alt={''}
-                            className="w-full translate-x-4 w-5/6"
-                        />
+                    <div className="py-8">
+                        <Divider />
                     </div>
                 </div>
             </Section>

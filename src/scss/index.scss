@@ -48,7 +48,7 @@ input {
 }
 .section {
   scroll-snap-align: start;
-  height: 100vh;
+  //height: 100vh;
   min-height: -webkit-fill-available;
 
   @supports (-webkit-touch-callout: none) {
