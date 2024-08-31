@@ -67,7 +67,7 @@ export const SaveTheDate = () => {
                 </div>
 
                 <div className="pt-6">
-                    <div className="font-viao text-center text-xl font-bold">
+                    <div className="font-viao text-center text-xl font-bold italic">
                         Sự hiện diện của Quý khách là niềm vinh hạnh cho Gia
                         đình chúng tôi !
                     </div>
