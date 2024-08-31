@@ -45,10 +45,9 @@ export const WeGettingMarried = () => {
                                 ngày chúng mình trở thành một gia đình.
                                 <br />
                                 Trân trọng mời bạn đến chung vui trong ngày
-                                trọng đại của chúng mình. Sự hiện diện, tình yêu
-                                và những lời chúc tốt đẹp của bạn sẽ làm cho
-                                ngày đặc biệt của chúng mình thêm trọn vẹn.{' '}
-                                <br />
+                                trọng đại này. Sự hiện diện, tình yêu và những
+                                lời chúc tốt đẹp của bạn sẽ làm cho ngày đặc
+                                biệt của chúng mình thêm trọn vẹn. <br />
                                 Xin chân thành cảm ơn tình cảm của bạn !
                             </div>
                         </motion.div>
