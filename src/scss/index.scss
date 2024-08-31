@@ -12,15 +12,10 @@ body {
   min-height: -webkit-fill-available;
 }
 
-body {
-  height: -webkit-fill-available;
-  height: 100%;
-}
-
 .react-calendar__tile--active {
   background: #7a0707;
   border-radius: 9999px;
-  color: #f9f0e3;
+  color: #fff9f0;
 }
 
 .react-calendar__month-view__weekdays__weekday {
@@ -32,7 +27,6 @@ body {
 }
 .page {
   height: 100vh;
-  max-width: 1600px;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
 

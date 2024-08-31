@@ -58,7 +58,7 @@ export const HomeHead = () => {
                             <div className="pt-4 md:pt-8" />
                             <div className="text-4xl md:text-6xl flex">
                                 Đức Mạnh <span className="ml-1 md:ml-4" />
-                                <IoHeart color="#f9f0e3" />
+                                <IoHeart color="#fff9f0" />
                                 <span className="mr-1 md:mr-3" />
                                 Thùy Linh
                             </div>
