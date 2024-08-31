@@ -2,6 +2,7 @@ import Calendar from 'react-calendar'
 import { Section } from 'component/section/Section.tsx'
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
+import { Divider } from 'component/section/Divider.tsx'
 
 export const SaveTheDate = () => {
     const [guest, setGuest] = useState<string>('')
@@ -12,8 +13,8 @@ export const SaveTheDate = () => {
     }, [])
 
     return (
-        <Section container>
-            <div className="flex flex-col items-center pt-4 h-screen mx-auto px-4 md:px-0">
+        <Section>
+            <div className="flex flex-col items-center pt-4">
                 <div className="text-center font-old-standard md:text-2xl md:md:w-96">
                     <div className="text-xl font-thin">
                         Trân trọng kính mời {guest || 'bạn'}
@@ -57,47 +58,52 @@ export const SaveTheDate = () => {
                 </div>
 
                 <div className="pt-4 md:pt-16" />
-                <motion.div
-                    initial={{ x: -200, y: 0 }}
-                    whileInView={{ x: 0, y: 0 }}
-                    animate={{ x: -200, y: 0 }}
-                    transition={{
-                        type: 'spring',
-                        stiffness: 100,
-                        ease: 'linear',
-                        duration: 2000,
-                    }}
-                >
-                    <div className="flex flex-col items-center">
-                        <div className="border-4 border-theme-main md:w-96">
-                            <div className="text-xl font-old-standard uppercase font-black text-center p-2 bg-theme-main text-theme-bg">
-                                September 2024
-                            </div>
-                            <div className="flex justify-center">
-                                <div className="w-full border border-theme-main" />
-                            </div>
-                            <div className="pt-4" />
-                            <div className="flex flex-col items-center justify-center px-2">
-                                <div className="w-full">
-                                    <Calendar
-                                        showNeighboringMonth={false}
-                                        value={new Date('2024-09-22')}
-                                        showNavigation={false}
-                                        locale={'vi-vn'}
-                                        tileClassName="p-2 text-md font-['Montserrat']"
-                                    />
+                <div className="container mx-auto px-4 md:px-0">
+                    <motion.div
+                        initial={{ x: -200, y: 0 }}
+                        whileInView={{ x: 0, y: 0 }}
+                        animate={{ x: -200, y: 0 }}
+                        transition={{
+                            type: 'spring',
+                            stiffness: 100,
+                            ease: 'linear',
+                            duration: 2000,
+                        }}
+                    >
+                        <div className="flex flex-col items-center">
+                            <div className="border-4 border-theme-main md:w-96">
+                                <div className="text-xl font-old-standard uppercase font-black text-center p-2 bg-theme-main text-theme-bg">
+                                    September 2024
+                                </div>
+                                <div className="flex justify-center">
+                                    <div className="w-full border border-theme-main" />
+                                </div>
+                                <div className="pt-4" />
+                                <div className="flex flex-col items-center justify-center px-2">
+                                    <div className="w-full">
+                                        <Calendar
+                                            showNeighboringMonth={false}
+                                            value={new Date('2024-09-22')}
+                                            showNavigation={false}
+                                            locale={'vi-vn'}
+                                            tileClassName="p-2 text-md font-['Montserrat']"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className="pt-6">
-                        <div className="font-viao text-center text-xl font-bold italic">
-                            Sự hiện diện của Quý khách là niềm vinh hạnh cho Gia
-                            đình chúng tôi !
+                        <div className="pt-6">
+                            <div className="font-viao text-center text-xl font-bold italic">
+                                Sự hiện diện của Quý khách là niềm vinh hạnh cho
+                                Gia đình chúng tôi !
+                            </div>
                         </div>
-                    </div>
-                </motion.div>
+                    </motion.div>
+                </div>
+                <div className="py-8">
+                    <Divider r />
+                </div>
             </div>
         </Section>
     )
