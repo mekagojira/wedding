@@ -12,7 +12,7 @@ export const SaveTheDate = () => {
 
     return (
         <Section>
-            <div className="flex flex-col pt-16 h-screen mx-auto px-4 md:px-0">
+            <div className="flex flex-col pt-4 h-screen mx-auto px-4 md:px-0">
                 <div className="text-center font-old-standard md:text-2xl">
                     <div className="text-xl font-thin">
                         Trân trọng kính mời {guest || 'bạn'}
@@ -63,6 +63,13 @@ export const SaveTheDate = () => {
                                 tileClassName="p-2 text-md font-['Montserrat']"
                             />
                         </div>
+                    </div>
+                </div>
+
+                <div className="pt-6">
+                    <div className="font-viao text-center text-xl font-bold">
+                        Sự hiện diện của Quý khách là niềm vinh hạnh cho Gia
+                        đình chúng tôi !
                     </div>
                 </div>
             </div>
