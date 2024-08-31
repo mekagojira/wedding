@@ -1,6 +1,7 @@
 import { Section } from 'component/section/Section.tsx'
 import ImageGallery from 'react-image-gallery'
 import 'react-image-gallery/styles/scss/image-gallery.scss'
+import { useRef } from 'react'
 
 export const WeGettingMarried = () => {
     const imgs = [
@@ -13,16 +14,24 @@ export const WeGettingMarried = () => {
         thumbnail: item,
     }))
 
+    const gallery = useRef<ImageGallery>(null)
+
     return (
         <>
             <Section container>
                 <div className="flex h-screen items-center flex-col">
                     <div className="pt-8" />
-                    <div className="font-viao text-2xl text-center uppercase shadow-lg font-black bg-theme-main text-theme-bg px-3 py-2">
+                    <div
+                        onClick={() =>
+                            gallery?.current?.fullScreen &&
+                            gallery.current.fullScreen()
+                        }
+                        className="font-viao text-2xl text-center uppercase shadow-lg font-black bg-theme-main text-theme-bg px-3 py-2"
+                    >
                         Album cưới
                     </div>
                     <div className="pt-4" />
-                    <ImageGallery items={imgs} />
+                    <ImageGallery items={imgs} ref={gallery} />
                 </div>
             </Section>
             <Section container>
