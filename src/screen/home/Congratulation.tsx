@@ -36,7 +36,7 @@ export function Congratulation() {
                     <div className="pt-40" />
                     <div className="flex w-full">
                         <div className="w-full flex flex-col items-center justify-center pt-4 my-8">
-                            <div className="uppercase text-lg">{item.text}</div>
+                            {/*<div className="uppercase text-lg">{item.text}</div>*/}
                             <div className="pt-4" />
                             <img
                                 src={item.img}
