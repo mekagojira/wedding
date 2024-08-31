@@ -6,6 +6,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { PiCatLight } from 'react-icons/pi'
 import { Modal } from 'screen/home/Modal.tsx'
+import { Congratulation } from 'screen/home/Congratulation.tsx'
 
 export const HomeScreen = () => {
     const [openModal, setOpenModal] = useState<boolean>(false)
@@ -36,6 +37,7 @@ export const HomeScreen = () => {
             <HomeHead />
             <WeGettingMarried />
             <SaveTheDate />
+            <Congratulation />
             <Modal show={openModal} toggle={toggle} />
             <div className="fixed right-0 bottom-0 p-4">
                 <button
