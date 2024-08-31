@@ -1,9 +1,29 @@
+import axios from 'axios'
+import React, { useState } from 'react'
+
+const endpoint = 'https://wedding-api.manh.moe/plan/register'
+
 export function Modal({ toggle, show }: { show: boolean; toggle: () => void }) {
+    const [name, setName] = useState('')
+    const [phone, setPhone] = useState('')
+    const [guests, setGuests] = useState('')
+
     const close = () => {
         toggle()
     }
 
-    const submit = () => {
+    const send = async () => {
+        try {
+            await axios.post(endpoint, { name, phone, guests })
+        } catch (e) {
+            console.error(e)
+        }
+    }
+
+    const submit = async (e?: React.FormEvent) => {
+        if (e?.preventDefault) e.preventDefault()
+
+        await send()
         toggle()
         alert('Xác nhận thành công')
     }
@@ -39,16 +59,22 @@ export function Modal({ toggle, show }: { show: boolean; toggle: () => void }) {
                     <input
                         className="bg-theme-bg px-3 py-2 w-full rounded font-bold uppercase text-theme-main"
                         placeholder="Nhập tên của bạn"
+                        value={name}
+                        onChange={e => setName(e.target.value)}
                     />
                     <div className="pt-2" />
                     <input
                         className="bg-theme-bg px-3 py-2 w-full rounded font-bold uppercase text-theme-main"
                         placeholder="SĐT"
+                        value={phone}
+                        onChange={e => setPhone(e.target.value)}
                     />
                     <div className="pt-2" />
                     <input
                         className="bg-theme-bg px-3 py-2 w-full rounded font-bold uppercase text-theme-main"
                         placeholder="Người thương đi cùng"
+                        value={guests}
+                        onChange={e => setGuests(e.target.value)}
                     />
                     <div className="pt-4" />
                     <button
