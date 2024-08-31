@@ -9,7 +9,7 @@ export function Section(
     return (
         <section
             style={props.style || {}}
-            className={`section ${props.container ? 'container mx-auto px-4 md:px-0' : ''}`}
+            className={`section overflow-hidden ${props.container ? 'container mx-auto px-4 md:px-0' : ''}`}
         >
             {props.children}
         </section>
