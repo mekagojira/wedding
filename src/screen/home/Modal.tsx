@@ -40,9 +40,9 @@ export function Modal({ toggle, show }: { show: boolean; toggle: () => void }) {
                 className={`z-20 fixed ${show ? 'scale-100 opacity-100' : 'scale-0 opacity-0'}`}
                 style={{
                     top: '2rem',
-                    left: '2rem',
-                    width: 'calc(100vw - 4rem)',
-                    height: 'calc(100vh - 4rem)',
+                    left: '1rem',
+                    width: 'calc(100vw - 2rem)',
+                    height: 'calc(100vh - 12rem)',
                     // transform: show ? '' : 'translate(0,100vh)',
                     transition: 'all 0.2s linear',
                 }}
