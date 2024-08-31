@@ -6,8 +6,8 @@ export const WeGettingMarried = () => {
     return (
         <>
             <Section>
-                <div className="flex flex-col items-center pt-8 min-h-screen">
-                    <div className="text-center text-theme-main font-viao text-3xl font-bold flex">
+                <div className="flex flex-col items-center min-h-screen">
+                    <div className="text-center text-theme-main font-viao text-3xl font-bold flex py-2">
                         <div className="-rotate-45">
                             <HiHeart size={24} />
                         </div>
@@ -16,7 +16,6 @@ export const WeGettingMarried = () => {
                             <HiHeart size={24} />
                         </div>
                     </div>
-                    <div className="pt-8" />
                     <div className="flex justify-center items-center">
                         <img
                             alt={''}
