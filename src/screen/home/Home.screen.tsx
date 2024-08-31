@@ -12,7 +12,7 @@ import { Loading } from 'screen/home/Loading.tsx'
 
 export const HomeScreen = () => {
     const [openModal, setOpenModal] = useState<boolean>(false)
-    const [init, setInit] = useState<boolean>(false)
+    const [init, setInit] = useState<number>(0)
 
     const toggle = () => setOpenModal(!openModal)
 
@@ -35,7 +35,7 @@ export const HomeScreen = () => {
         })
     }, [child, el, tl])
 
-    const initOk = () => setInit(true)
+    const initOk = () => setInit(init + 1)
 
     return (
         <main ref={el} className="min-h-screen page bg-theme-bg">
