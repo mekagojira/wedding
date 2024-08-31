@@ -31,7 +31,7 @@ export const WeGettingMarried = () => {
                         Album cưới
                     </div>
                     <div className="pt-4" />
-                    <ImageGallery items={imgs} ref={gallery} />
+                    <ImageGallery items={imgs} ref={gallery} autoPlay={true} />
                 </div>
             </Section>
             <Section container>
