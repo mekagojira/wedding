@@ -39,7 +39,7 @@ export const HomeScreen = () => {
 
     return (
         <main ref={el} className="min-h-screen page bg-theme-bg">
-            {!init && <Loading />}
+            {!init && <Loading show={!init} />}
             <HomeHead setInit={initOk} />
 
             <WeGettingMarried />
