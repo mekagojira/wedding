@@ -7,7 +7,14 @@ export const WeGettingMarried = () => {
         <>
             <Section>
                 <div className="flex flex-col items-center min-h-screen">
-                    <div className="text-center text-theme-main font-viao text-2xl font-bold flex py-8">
+                    <div className="flex items-center justify-start py-8">
+                        <img
+                            src={'/assets/bg-2.png'}
+                            alt={''}
+                            className="w-full rotate-180 w-5/6 -translate-x-4"
+                        />
+                    </div>
+                    <div className="text-center text-theme-main font-viao text-2xl font-bold flex pb-8">
                         <div className="-rotate-45">
                             <HiHeart size={24} />
                         </div>
@@ -48,11 +55,11 @@ export const WeGettingMarried = () => {
                             </div>
                         </motion.div>
                     </div>
-                    <div className="flex items-center justify-center py-8">
+                    <div className="flex items-center justify-end py-8">
                         <img
-                            src={'/assets/bg-leaf-1.png'}
+                            src={'/assets/bg-2.png'}
                             alt={''}
-                            className="w-64"
+                            className="w-full translate-x-4 w-5/6"
                         />
                     </div>
                 </div>
