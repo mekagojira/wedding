@@ -12,12 +12,12 @@ export const WeGettingMarried = () => {
                             className="shadow-lg md:w-1/2"
                         />
                     </div>
+                    <div className="pt-8" />
+                    <div className="text-center text-theme-main font-['Corinthia'] italic text-5xl">
+                        Đức Mạnh -Thùy Linh
+                    </div>
                     <div className="container mx-auto px-4 md:px-0">
                         <div className="pt-8" />
-                        <div className="text-center text-theme-main font-['Corinthia'] italic text-5xl">
-                            Đức Mạnh & Thùy Linh
-                        </div>
-                        <div className="pt-12" />
                         <div className="box-e text-justify md:w-1/2 text-theme-second font-viao text-lg">
                             Thật vui vì được gặp và đón tiếp các bạn trong một
                             dịp đặc biệt như đám cưới của chúng tôi. Chúng tôi
