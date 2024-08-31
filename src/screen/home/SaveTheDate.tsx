@@ -1,12 +1,22 @@
 import Calendar from 'react-calendar'
 import { Section } from 'component/section/Section.tsx'
+import { useEffect, useState } from 'react'
 
 export const SaveTheDate = () => {
+    const [guest, setGuest] = useState<string>('')
+
+    useEffect(() => {
+        const search = new URLSearchParams(window.location.search)
+        setGuest(search.get('guest') || search.get('g') || '')
+    }, [])
+
     return (
         <Section>
             <div className="flex flex-col justify-center h-screen mx-auto px-4 md:px-0">
                 <div className="text-center font-old-standard md:text-2xl">
-                    <div className="text-xl font-thin">Trân trọng kính mời</div>
+                    <div className="text-xl font-thin">
+                        Trân trọng kính mời {guest || 'bạn'}
+                    </div>
                     <div className="text-xl font-thin">
                         Đến dự buổi tiệc chung vui của chúng tôi tại
                     </div>
