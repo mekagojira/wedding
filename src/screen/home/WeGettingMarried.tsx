@@ -7,7 +7,7 @@ export const WeGettingMarried = () => {
         <>
             <Section>
                 <div className="flex flex-col items-center min-h-screen">
-                    <div className="text-center text-theme-main font-viao text-2xl font-bold flex py-2">
+                    <div className="text-center text-theme-main font-viao text-2xl font-bold flex py-8">
                         <div className="-rotate-45">
                             <HiHeart size={24} />
                         </div>
