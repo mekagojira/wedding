@@ -28,6 +28,7 @@ export function Modal({ toggle, show }: { show: boolean; toggle: () => void }) {
                 }}
             >
                 <form
+                    onSubmit={submit}
                     className="w-full h-full rounded-lg shadow-lg bg-cover bg-center px-4 py-8 flex flex-col justify-center"
                     style={{
                         backgroundImage: 'url(/img/bg-003.jpg)',
@@ -52,7 +53,7 @@ export function Modal({ toggle, show }: { show: boolean; toggle: () => void }) {
                     <div className="pt-4" />
                     <button
                         className="bg-theme-main w-full py-2 uppercase font-bold text-theme-bg"
-                        onClick={submit}
+                        type="submit"
                     >
                         Xác nhận
                     </button>
