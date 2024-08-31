@@ -2,6 +2,7 @@ import { Section } from 'component/section/Section.tsx'
 import ImageGallery from 'react-image-gallery'
 import 'react-image-gallery/styles/scss/image-gallery.scss'
 import { useRef } from 'react'
+import { Divider } from 'component/section/Divider.tsx'
 
 const imgs = [
     '/gallery/MAX06073-min.jpg',
@@ -24,8 +25,8 @@ export function Album() {
         gallery?.current?.fullScreen && gallery.current.fullScreen()
 
     return (
-        <Section container>
-            <div className="flex h-screen items-center flex-col">
+        <Section>
+            <div className="flex items-center flex-col">
                 <div className="pt-2" />
                 <div
                     onClick={fullscreen}
@@ -34,12 +35,17 @@ export function Album() {
                     Album cưới
                 </div>
                 <div className="pt-4" />
-                <ImageGallery
-                    items={imgs}
-                    ref={gallery}
-                    onClick={fullscreen}
-                    useBrowserFullscreen={false}
-                />
+                <div className="mx-auto container">
+                    <ImageGallery
+                        items={imgs}
+                        ref={gallery}
+                        onClick={fullscreen}
+                        useBrowserFullscreen={false}
+                    />
+                </div>
+                <div className="py-8">
+                    <Divider />
+                </div>
             </div>
         </Section>
     )

@@ -56,9 +56,6 @@ export function Congratulation() {
                 }}
             >
                 <div className="flex flex-col justify-center items-center h-screen px-4 container text-theme-bg">
-                    <div className="font-viao text-2xl text-center uppercase shadow-lg font-black bg-theme-main text-theme-bg px-3 py-2">
-                        Hộp mừng cưới
-                    </div>
                     <div className="pt-40" />
                     <div className="flex w-full">
                         <div className="w-full flex flex-col items-center justify-center pt-4 my-8">
@@ -94,7 +91,14 @@ export function Congratulation() {
                     <div className="flex space-x-8 pb-8">{desktopView}</div>
                 </Section>
             </div>
-            <div className="block md:hidden">{mobileView}</div>
+            <div className="block md:hidden">
+                <div className="flex flex-col items-center pt-8 pb-16">
+                    <div className="font-viao w-96 text-2xl text-center uppercase shadow-lg font-black bg-theme-main text-theme-bg px-3 py-2">
+                        Hộp mừng cưới
+                    </div>
+                </div>
+                {mobileView}
+            </div>
         </>
     )
 }
