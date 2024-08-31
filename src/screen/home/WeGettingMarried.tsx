@@ -4,12 +4,12 @@ export const WeGettingMarried = () => {
     return (
         <>
             <Section container>
-                <div className="flex flex-col pt-4 md:hidden min-h-screen">
+                <div className="flex flex-col items-center pt-4 min-h-screen">
                     <div className="flex justify-center items-center">
                         <img
                             alt={''}
                             src={'/img/manhlinh-03.JPG'}
-                            className="shadow-lg rounded-lg"
+                            className="shadow-lg rounded-lg md:w-1/2"
                         />
                     </div>
                     <div className="pt-8" />
@@ -17,7 +17,7 @@ export const WeGettingMarried = () => {
                         We are getting married
                     </div>
                     <div className="pt-4" />
-                    <div className="text-justify text-theme-second font-viao text-lg">
+                    <div className="text-justify md:w-1/2 text-theme-second font-viao text-lg">
                         Thật vui vì được gặp và đón tiếp các bạn trong một dịp
                         đặc biệt như đám cưới của chúng tôi. Chúng tôi muốn gửi
                         đến bạn những lời cảm ơn sâu sắc nhất và để bạn biết

@@ -23,6 +23,8 @@ export function Congratulation() {
     return info.map(item => {
         return (
             <Section
+                container
+                key={item.num}
                 style={{
                     backgroundImage: `url(img/${item.bg})`,
                     backgroundPosition: 'center center',
@@ -40,7 +42,7 @@ export function Congratulation() {
                             <div className="pt-4" />
                             <img
                                 src={item.img}
-                                className="w-2/3 shadow"
+                                className="w-2/3 md:w-96 shadow"
                                 alt={''}
                             />
                             <div className={'pt-8'} />
