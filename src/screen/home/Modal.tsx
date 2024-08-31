@@ -64,21 +64,21 @@ export function Modal({ toggle, show }: { show: boolean; toggle: () => void }) {
                 >
                     {/*<label className="text-theme-main">Xác nhận tham dự</label>*/}
                     <input
-                        className="bg-theme-bg px-3 py-2 w-full rounded font-bold uppercase text-theme-main"
+                        className="bg-theme-bg px-3 py-2 w-full rounded  text-theme-main"
                         placeholder="Nhập tên của bạn"
                         value={name}
                         onChange={e => setName(e.target.value)}
                     />
                     <div className="pt-2" />
                     <input
-                        className="bg-theme-bg px-3 py-2 w-full rounded font-bold uppercase text-theme-main"
+                        className="bg-theme-bg px-3 py-2 w-full rounded  text-theme-main"
                         placeholder="SĐT"
                         value={phone}
                         onChange={e => setPhone(e.target.value)}
                     />
                     <div className="pt-2" />
                     <input
-                        className="bg-theme-bg px-3 py-2 w-full rounded font-bold uppercase text-theme-main"
+                        className="bg-theme-bg px-3 py-2 w-full rounded  text-theme-main"
                         placeholder="Người thương đi cùng"
                         value={guests}
                         onChange={e => setGuests(e.target.value)}
