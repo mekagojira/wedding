@@ -41,6 +41,9 @@ export const WeGettingMarried = () => {
                             }}
                         >
                             <div className="box-e text-justify md:w-1/2 text-theme-second font-viao text-lg">
+                                Sau hơn một thập kỷ đồng hành, cuối cùng đã đến
+                                ngày chúng mình trở thành một gia đình.
+                                <br />
                                 Trân trọng mời bạn đến chung vui trong ngày
                                 trọng đại của chúng mình. Sự hiện diện, tình yêu
                                 và những lời chúc tốt đẹp của bạn sẽ làm cho
