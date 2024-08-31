@@ -7,6 +7,7 @@ export function Modal({ toggle, show }: { show: boolean; toggle: () => void }) {
     const [name, setName] = useState('')
     const [phone, setPhone] = useState('')
     const [guests, setGuests] = useState('')
+    const [loading, setLoading] = useState<boolean>(false)
 
     const close = () => {
         toggle()
@@ -22,9 +23,15 @@ export function Modal({ toggle, show }: { show: boolean; toggle: () => void }) {
 
     const submit = async (e?: React.FormEvent) => {
         if (e?.preventDefault) e.preventDefault()
+        if (loading) return
 
+        setLoading(true)
         await send()
+        setLoading(false)
         toggle()
+        setName('')
+        setPhone('')
+        setPhone('')
         alert('Xác nhận thành công')
     }
 
@@ -81,7 +88,7 @@ export function Modal({ toggle, show }: { show: boolean; toggle: () => void }) {
                         className="bg-theme-main w-full py-2 uppercase font-bold text-theme-bg"
                         type="submit"
                     >
-                        Xác nhận
+                        {!loading ? 'Xác nhận' : '......'}
                     </button>
                 </form>
             </div>
