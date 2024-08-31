@@ -3,7 +3,7 @@ import { WeGettingMarried } from 'screen/home/WeGettingMarried.tsx'
 import { SaveTheDate } from 'screen/home/SaveTheDate.tsx'
 import { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+// import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { PiCatLight } from 'react-icons/pi'
 import { Modal } from 'screen/home/Modal.tsx'
 import { Congratulation } from 'screen/home/Congratulation.tsx'
@@ -19,7 +19,7 @@ export const HomeScreen = () => {
     const el = useRef(null)
     const child = gsap.utils.selector(el)
     const tl = gsap.timeline()
-    gsap.registerPlugin(ScrollTrigger)
+    // gsap.registerPlugin(ScrollTrigger)
 
     useEffect(() => {
         tl.from(child('h1'), {
@@ -38,7 +38,10 @@ export const HomeScreen = () => {
     const initOk = () => setInit(init + 1)
 
     return (
-        <main ref={el} className="min-h-screen page bg-theme-bg">
+        <main
+            // ref={el}
+            className="min-h-screen page bg-theme-bg"
+        >
             {!init && <Loading show={init < 1} />}
             <HomeHead setInit={initOk} />
 
