@@ -26,7 +26,7 @@ export const WeGettingMarried = () => {
                     <div className="text-center text-theme-main font-['Corinthia'] italic text-4xl py-4">
                         Đức Mạnh -Thùy Linh
                     </div>
-                    <div className="container mx-auto px-4 md:px-0">
+                    <div className="container mx-auto px-4 md:px-0 flex flex-col items-center">
                         <motion.div
                             initial={{ x: 0, y: 200 }}
                             whileInView={{ x: 0, y: 0 }}
@@ -44,7 +44,7 @@ export const WeGettingMarried = () => {
                                 này. Sự hiện diện, tình yêu và những lời chúc
                                 tốt đẹp của bạn sẽ làm cho ngày đặc biệt của
                                 chúng mình thêm trọn vẹn. Xin chân thành cảm ơn
-                                tình cảm của của bạn !
+                                tình cảm của bạn !
                             </div>
                         </motion.div>
                     </div>
