@@ -5,6 +5,7 @@ export function Modal({ toggle, show }: { show: boolean; toggle: () => void }) {
 
     const submit = () => {
         toggle()
+        alert('Xác nhận thành công')
     }
 
     return (
