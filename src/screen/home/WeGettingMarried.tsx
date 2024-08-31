@@ -42,12 +42,7 @@ export const WeGettingMarried = () => {
                         Album cưới
                     </div>
                     <div className="pt-4" />
-                    <ImageGallery
-                        items={imgs}
-                        ref={gallery}
-                        autoPlay={true}
-                        slideInterval={6000}
-                    />
+                    <ImageGallery items={imgs} ref={gallery} />
                 </div>
             </Section>
             <Section container>
