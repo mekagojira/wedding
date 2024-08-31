@@ -23,7 +23,6 @@ export const WeGettingMarried = () => {
     ].map(item => ({
         original: item,
         thumbnail: item,
-        thumbnailClass: 'h-64',
     }))
 
     const gallery = useRef<ImageGallery>(null)
