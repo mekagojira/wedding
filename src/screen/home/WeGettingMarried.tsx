@@ -23,6 +23,7 @@ export const WeGettingMarried = () => {
                             <HiHeart size={24} />
                         </div>
                     </div>
+                    <div className="pt-4" />
                     <div className="flex justify-center items-center">
                         <img
                             alt={''}
@@ -55,6 +56,7 @@ export const WeGettingMarried = () => {
                             </div>
                         </motion.div>
                     </div>
+                    <div className="pt-4" />
                     <div className="flex items-center justify-end py-8">
                         <img
                             src={'/assets/bg-2.png'}
