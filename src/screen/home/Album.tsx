@@ -4,19 +4,12 @@ import 'react-image-gallery/styles/scss/image-gallery.scss'
 import { useRef } from 'react'
 
 const imgs = [
-    '/gallery/MAX06062-min.jpg',
-    '/gallery/MAX06067-min.jpg',
     '/gallery/MAX06073-min.jpg',
     '/gallery/MAX06100-min.jpg',
-    '/gallery/MAX06109-min.jpg',
     '/gallery/MAX06133-min.jpg',
     '/gallery/MAX06161-min.jpg',
-    '/gallery/MAX06205-min.jpg',
     '/gallery/MAX06232-min.jpg',
     '/gallery/MAX06249-min.jpg',
-    '/gallery/MAX06335-min.jpg',
-    '/gallery/MAX06344-min.jpg',
-    '/gallery/MAX06346-min.jpg',
     '/gallery/MAX06404-min.jpg',
     '/gallery/MAX06469-min.jpg',
 ].map(item => ({
