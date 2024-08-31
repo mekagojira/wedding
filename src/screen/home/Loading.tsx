@@ -3,7 +3,10 @@ import { IoHeart } from 'react-icons/io5'
 export function Loading({ show }: { show: boolean }) {
     return (
         <div
-            className={`h-screen w-screen top-0 left-0 fixed z-50 bg-theme-bg transition-all opacity-100 ${!show ? 'opacity-0' : ''}`}
+            className={`h-screen w-screen top-0 left-0 fixed z-50 bg-theme-bg opacity-100 ${!show ? 'opacity-0' : ''}`}
+            style={{
+                transition: 'all 0.2s linear',
+            }}
         >
             <div className="relative w-full h-full flex flex-wrap items-start md:items-end justify-center pt-16 md:p-0">
                 <div className="text-center font-viao text-theme-main">
