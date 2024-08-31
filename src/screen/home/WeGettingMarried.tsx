@@ -5,7 +5,7 @@ export const WeGettingMarried = () => {
         <>
             <Section>
                 <div className="flex flex-col items-center pt-8 min-h-screen">
-                    <div className="text-center text-theme-main font-['Montserrat'] font-bold text-xl md:text-3xl">
+                    <div className="text-center text-theme-main font-viao text-3xl font-bold">
                         We are getting married
                     </div>
                     <div className="pt-8" />
