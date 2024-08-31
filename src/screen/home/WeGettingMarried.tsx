@@ -31,7 +31,7 @@ export const WeGettingMarried = () => {
                             className="shadow-lg md:w-1/2"
                         />
                     </div>
-                    <div className="text-center text-theme-main font-['Corinthia'] italic text-4xl py-8">
+                    <div className="text-center text-theme-main font-['Corinthia'] italic text-5xl py-8">
                         Đức Mạnh -Thùy Linh
                     </div>
                     <div className="container mx-auto px-4 md:px-0 flex flex-col items-center">
