@@ -8,7 +8,7 @@ export function Congratulation() {
             num: '18042014',
             img: '/img/qr-linh.jpg',
             text: 'Đến cô dâu',
-            bg: 'linh-4.jpg',
+            bg: 'linh-bg-1.jpg',
         },
         {
             bank: 'Techcombank',
@@ -16,7 +16,7 @@ export function Congratulation() {
             num: '9868281198',
             img: '/img/qr-manh.jpeg',
             text: 'Đến chú rể',
-            bg: 'linh-4.jpg',
+            bg: 'manh-bg-1.jpg',
         },
     ]
 
@@ -29,13 +29,13 @@ export function Congratulation() {
                     backgroundSize: 'cover',
                 }}
             >
-                <div className="flex flex-col justify-center items-center h-screen p-4 container text-theme-bg">
+                <div className="flex flex-col justify-center items-center h-screen px-4 container text-theme-bg">
                     <div className="font-viao text-2xl text-center uppercase shadow-lg font-black bg-theme-main text-theme-bg px-3 py-2">
                         Hộp mừng cưới
                     </div>
-                    <div className="pt-32" />
+                    <div className="pt-40" />
                     <div className="flex w-full">
-                        <div className="w-full flex flex-col items-center justify-center py-4 border border-theme-second my-8">
+                        <div className="w-full flex flex-col items-center justify-center pt-4 my-8">
                             <div className="uppercase text-lg">{item.text}</div>
                             <div className="pt-4" />
                             <img
