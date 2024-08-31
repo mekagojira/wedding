@@ -43,8 +43,8 @@ export const WeGettingMarried = () => {
                             <div className="box-e text-justify md:w-1/2 text-theme-second font-viao text-lg">
                                 Trân trọng mời bạn đến chung vui trong ngày
                                 trọng đại của chúng mình! Sự hiện diện, tình yêu
-                                và những lời chúc tốt đẹp của bạn khiến ngày vui
-                                thêm trọn vẹn.
+                                và những lời chúc tốt đẹp của bạn sẽ làm cho
+                                ngày đặc biệt của chúng mình thêm trọn vẹn
                             </div>
                         </motion.div>
                     </div>
