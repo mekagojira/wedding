@@ -1,5 +1,6 @@
 import { Section } from 'component/section/Section.tsx'
 import { HiHeart } from 'react-icons/hi'
+import { motion } from 'framer-motion'
 
 export const WeGettingMarried = () => {
     return (
@@ -28,15 +29,24 @@ export const WeGettingMarried = () => {
                         Đức Mạnh -Thùy Linh
                     </div>
                     <div className="container mx-auto px-4 md:px-0">
-                        <div className="pt-8" />
-                        <div className="box-e text-justify md:w-1/2 text-theme-second font-viao text-lg">
-                            Thật vui vì được gặp và đón tiếp các bạn trong một
-                            dịp đặc biệt như đám cưới của chúng tôi. Chúng tôi
-                            muốn gửi đến bạn những lời cảm ơn sâu sắc nhất và để
-                            bạn biết chúng tôi rất hạnh phúc khi thấy bạn ở đó.
-                            Cảm ơn các bạn rất nhiều vì sự hiện diện cùng những
-                            lời chúc tốt đẹp mà bạn đã dành cho chúng tôi!
-                        </div>
+                        <div className="pt-2" />
+                        <motion.div
+                            initial={{ x: 0, y: 200 }}
+                            whileInView={{ x: 0, y: 0 }}
+                            animate={{ x: 0, y: 200 }}
+                            transition={{
+                                type: 'spring',
+                                stiffness: 100,
+                                ease: 'linear',
+                            }}
+                        >
+                            <div className="box-e text-justify md:w-1/2 text-theme-second font-viao text-lg">
+                                Trân trọng mời bạn đến chung vui trong ngày
+                                trọng đại của chúng mình! Sự hiện diện, tình yêu
+                                và những lời chúc tốt đẹp của bạn khiến ngày vui
+                                thêm trọn vẹn.
+                            </div>
+                        </motion.div>
                     </div>
                 </div>
             </Section>
