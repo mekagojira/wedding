@@ -62,3 +62,7 @@ input {
 .image-gallery-thumbnails {
   //position: fixed;bottom: 0;left: 0;width: 100vw;
 }
+
+.image-gallery-slide .image-gallery-image {
+  object-fit: cover;
+}
