@@ -48,6 +48,13 @@ export const WeGettingMarried = () => {
                             </div>
                         </motion.div>
                     </div>
+                    <div className="flex items-center justify-center py-8">
+                        <img
+                            src={'/assets/bg-leaf-1.png'}
+                            alt={''}
+                            className="w-64"
+                        />
+                    </div>
                 </div>
             </Section>
         </>
