@@ -1,12 +1,19 @@
 import { Section } from 'component/section/Section.tsx'
+import { HiHeart } from 'react-icons/hi'
 
 export const WeGettingMarried = () => {
     return (
         <>
             <Section>
                 <div className="flex flex-col items-center pt-8 min-h-screen">
-                    <div className="text-center text-theme-main font-viao text-3xl font-bold">
-                        We are getting married
+                    <div className="text-center text-theme-main font-viao text-3xl font-bold flex">
+                        <div className="-rotate-45">
+                            <HiHeart size={24} />
+                        </div>
+                        <span className="">We are getting married</span>
+                        <div className="rotate-45">
+                            <HiHeart size={24} />
+                        </div>
                     </div>
                     <div className="pt-8" />
                     <div className="flex justify-center items-center">
