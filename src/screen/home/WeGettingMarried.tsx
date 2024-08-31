@@ -7,7 +7,7 @@ export const WeGettingMarried = () => {
         <>
             <Section>
                 <div className="flex flex-col items-center min-h-screen">
-                    <div className="text-center text-theme-main font-viao text-3xl font-bold flex py-2">
+                    <div className="text-center text-theme-main font-viao text-2xl font-bold flex py-2">
                         <div className="-rotate-45">
                             <HiHeart size={24} />
                         </div>
@@ -22,9 +22,8 @@ export const WeGettingMarried = () => {
                             src={'/img/manhlinh-03.JPG'}
                             className="shadow-lg md:w-1/2"
                         />
-                    </div>
-                    <div className="pt-8" />
-                    <div className="text-center text-theme-main font-['Corinthia'] italic text-5xl">
+                    </div> 
+                    <div className="text-center text-theme-main font-['Corinthia'] italic text-4xl py-4">
                         Đức Mạnh -Thùy Linh
                     </div>
                     <div className="container mx-auto px-4 md:px-0">
