@@ -4,9 +4,13 @@ import { Section } from 'component/section/Section.tsx'
 
 export const HomeHead = ({ setInit }: { setInit: () => void }) => {
     const images = [
-        '/img/manhlinh-banner-01.JPG',
+        '/img/manhlinh-banner-03.jpg',
         '/img/manhlinh-banner-02.JPG',
     ]
+
+    const [fetched, setFetched] = useState(false)
+
+    const fullSizeImg = '/img/manhlinh-banner-01.JPG'
 
     const [img] = useState(images[0])
 
@@ -14,17 +18,26 @@ export const HomeHead = ({ setInit }: { setInit: () => void }) => {
         <Section>
             <div className="h-screen">
                 <div
-                    className="h-full transition-all block md:hidden"
+                    className="h-full transition-all block md:hidden bg-cover"
                     style={{
-                        background: `url(${img})`,
+                        backgroundImage: `url(${fetched ? fullSizeImg : img})`,
                         backgroundSize: 'cover',
-                        backgroundPosition: 'center 20%',
+                        backgroundPosition: fetched ? 'center' : 'center 20%',
                     }}
                 >
                     <img
                         src={img}
                         alt="Background"
                         onLoad={() => setInit()}
+                        style={{ display: 'none' }} // Hide the image element
+                    />
+                    <img
+                        src={fullSizeImg}
+                        alt="Background"
+                        onLoad={() => {
+                            setFetched(true)
+                            console.log('LOADED')
+                        }}
                         style={{ display: 'none' }} // Hide the image element
                     />
                     <div className="relative w-full h-full flex flex-wrap items-start md:items-end justify-center pt-16 md:p-0">

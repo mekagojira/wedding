@@ -1,4 +1,5 @@
 import { IoHeart } from 'react-icons/io5'
+import ReactLoading from 'react-loading'
 
 export function Loading({ show }: { show: boolean }) {
     return (
@@ -8,7 +9,7 @@ export function Loading({ show }: { show: boolean }) {
                 transition: 'all 0.2s linear',
             }}
         >
-            <div className="relative w-full h-full flex flex-wrap items-start md:items-end justify-center pt-16 md:p-0">
+            <div className="relative w-full h-full flex flex-col flex-wrap items-start md:items-end items-center pt-16 md:p-0">
                 <div className="text-center font-viao text-theme-main">
                     <div className="text-2xl font-bold font-['Montserrat']">
                         SAVE THE DATE
@@ -27,6 +28,14 @@ export function Loading({ show }: { show: boolean }) {
                         </div>
                     </div>
                 </div>
+
+                <div className="pt-32" />
+                <ReactLoading
+                    type={'spin'}
+                    color={'#7a0707'}
+                    height={64}
+                    width={64}
+                />
             </div>
         </div>
     )
