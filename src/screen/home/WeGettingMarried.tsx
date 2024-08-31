@@ -4,7 +4,11 @@ export const WeGettingMarried = () => {
     return (
         <>
             <Section>
-                <div className="flex flex-col items-center pt-4 min-h-screen">
+                <div className="flex flex-col items-center pt-8 min-h-screen">
+                    <div className="text-center text-theme-main font-['Montserrat'] font-bold text-xl md:text-3xl">
+                        We are getting married
+                    </div>
+                    <div className="pt-8" />
                     <div className="flex justify-center items-center">
                         <img
                             alt={''}
@@ -25,10 +29,6 @@ export const WeGettingMarried = () => {
                             bạn biết chúng tôi rất hạnh phúc khi thấy bạn ở đó.
                             Cảm ơn các bạn rất nhiều vì sự hiện diện cùng những
                             lời chúc tốt đẹp mà bạn đã dành cho chúng tôi!
-                        </div>
-                        <div className="pt-8" />
-                        <div className="text-center text-theme-main font-['Montserrat'] font-bold text-xl md:text-3xl">
-                            We are getting married
                         </div>
                     </div>
                 </div>
