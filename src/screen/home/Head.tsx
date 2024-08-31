@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { IoHeart } from 'react-icons/io5'
 import { Section } from 'component/section/Section.tsx'
 
-export const HomeHead = () => {
+export const HomeHead = ({ setInit }: { setInit: () => void }) => {
     const images = [
         '/img/manhlinh-banner-01.JPG',
         '/img/manhlinh-banner-02.JPG',
@@ -21,6 +21,12 @@ export const HomeHead = () => {
                         backgroundPosition: 'center 20%',
                     }}
                 >
+                    <img
+                        src={img}
+                        alt="Background"
+                        onLoad={() => setInit()}
+                        style={{ display: 'none' }} // Hide the image element
+                    />
                     <div className="relative w-full h-full flex flex-wrap items-start md:items-end justify-center pt-16 md:p-0">
                         <div className="text-center font-viao text-white md:text-theme-main">
                             <div className="text-2xl font-bold font-['Montserrat']">
