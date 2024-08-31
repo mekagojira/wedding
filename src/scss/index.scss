@@ -56,7 +56,6 @@ input {
 }
 
 .image-gallery-slides {
-  padding: 5rem 0;
 }
 
 .image-gallery-thumbnails {
@@ -65,4 +64,5 @@ input {
 
 .image-gallery-slide .image-gallery-image {
   object-fit: cover;
+  height: 70vh;
 }
