@@ -66,3 +66,24 @@ input {
   object-fit: cover;
   height: 70vh;
 }
+
+:root {
+  --clr-border: #7a0707;
+  --AnimationLength: 0px;
+}
+
+.box-e {
+  padding: 2rem;
+
+  background-image: repeating-linear-gradient(0deg, #333333, #333333 10px, transparent 10px, transparent 20px, #333333 20px), repeating-linear-gradient(90deg, #333333, #333333 10px, transparent 10px, transparent 20px, #333333 20px), repeating-linear-gradient(180deg, #333333, #333333 10px, transparent 10px, transparent 20px, #333333 20px), repeating-linear-gradient(270deg, #333333, #333333 10px, transparent 10px, transparent 20px, #333333 20px);
+  background-size: 3px 100%, 100% 3px, 3px 100% , 100% 3px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+
+  background-image:
+          linear-gradient(0deg, var(--clr-border), var(--clr-border) 25%, transparent 25%, transparent 75%, var(--clr-border) 75%), // left
+          linear-gradient(90deg, var(--clr-border), var(--clr-border) 25%, transparent 25%, transparent 75%, var(--clr-border) 75%), // top
+          linear-gradient(180deg, var(--clr-border), var(--clr-border) 25%, transparent 25%, transparent 75%, var(--clr-border) 75%), // right
+          linear-gradient(270deg, var(--clr-border), var(--clr-border) 25%, transparent 25%, transparent 75%, var(--clr-border) 75%) // bottom
+;
+}
