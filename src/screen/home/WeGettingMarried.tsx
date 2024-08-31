@@ -7,14 +7,14 @@ export const WeGettingMarried = () => {
         <>
             <Section>
                 <div className="flex flex-col items-center min-h-screen">
-                    <div className="flex items-center justify-start py-8">
+                    <div className="flex items-center justify-start py-4">
                         <img
                             src={'/assets/bg-2.png'}
                             alt={''}
                             className="w-full rotate-180 w-5/6 -translate-x-4"
                         />
                     </div>
-                    <div className="text-center text-theme-main font-viao text-2xl font-bold flex pb-8">
+                    <div className="text-center text-theme-main font-viao text-2xl font-bold flex pb-4">
                         <div className="-rotate-45">
                             <HiHeart size={24} />
                         </div>
