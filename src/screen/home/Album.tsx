@@ -20,21 +20,26 @@ const imgs = [
 export function Album() {
     const gallery = useRef<ImageGallery>(null)
 
+    const fullscreen = () =>
+        gallery?.current?.fullScreen && gallery.current.fullScreen()
+
     return (
         <Section container>
             <div className="flex h-screen items-center flex-col">
                 <div className="pt-8" />
                 <div
-                    onClick={() =>
-                        gallery?.current?.fullScreen &&
-                        gallery.current.fullScreen()
-                    }
+                    onClick={fullscreen}
                     className="font-viao text-2xl text-center uppercase shadow-lg font-black bg-theme-main text-theme-bg px-3 py-2"
                 >
                     Album cưới
                 </div>
                 <div className="pt-4" />
-                <ImageGallery items={imgs} ref={gallery} />
+                <ImageGallery
+                    items={imgs}
+                    ref={gallery}
+                    onClick={fullscreen}
+                    useBrowserFullscreen={false}
+                />
             </div>
         </Section>
     )
