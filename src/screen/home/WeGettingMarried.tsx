@@ -17,7 +17,7 @@ export const WeGettingMarried = () => {
                         We are getting married
                     </div>
                     <div className="pt-4" />
-                    <div className="text-justify text-theme-second font-['Playfair+Display']">
+                    <div className="text-justify text-theme-second font-viao text-lg">
                         Thật vui vì được gặp và đón tiếp các bạn trong một dịp
                         đặc biệt như đám cưới của chúng tôi. Chúng tôi muốn gửi
                         đến bạn những lời cảm ơn sâu sắc nhất và để bạn biết
