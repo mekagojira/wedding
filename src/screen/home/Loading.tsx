@@ -1,10 +1,10 @@
 import { IoHeart } from 'react-icons/io5'
 import ReactLoading from 'react-loading'
 
-export function Loading({ show }: { show: boolean }) {
+export function Loading() {
     return (
         <div
-            className={`h-screen w-screen top-0 left-0 fixed z-50 bg-theme-bg opacity-100 bg-center bg-cover transition-all ${!show ? 'opacity-0' : ''}`}
+            className={`h-screen w-screen top-0 left-0 fixed z-50 bg-theme-bg opacity-100 bg-center bg-cover`}
             style={{
                 backgroundImage: `url(/img/manhlinh-banner-03-min.jpg)`,
             }}
