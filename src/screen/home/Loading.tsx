@@ -16,7 +16,7 @@ export function Loading({ setInit }: { setInit: () => void }) {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     color: '#fff9f0',
-                    fontFamily: 'Viaoda Libre',
+                    fontFamily: 'serif',
                 }}
             >
                 <div

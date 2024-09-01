@@ -1,2 +1,3 @@
 user-agent: *
 allow: /
+sitemap: https://wedding.manh.moe/sitemap.xml
