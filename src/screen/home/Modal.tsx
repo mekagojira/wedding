@@ -44,7 +44,7 @@ export function Modal({ toggle, show }: { show: boolean; toggle: () => void }) {
                 />
             )}
             <div
-                className={`z-20 fixed ${show ? 'scale-100 opacity-100' : 'scale-0 opacity-0'}`}
+                className={`z-20 fixed flex justify-center ${show ? 'scale-100 opacity-100' : 'scale-0 opacity-0'}`}
                 style={{
                     top: '2rem',
                     left: '1rem',
@@ -56,7 +56,7 @@ export function Modal({ toggle, show }: { show: boolean; toggle: () => void }) {
             >
                 <form
                     onSubmit={submit}
-                    className="w-full h-full rounded-lg shadow-lg bg-cover bg-center px-4 py-8 flex flex-col justify-center"
+                    className="w-full h-full max-w-96 rounded-lg shadow-lg bg-cover bg-center px-4 py-8 flex flex-col justify-center"
                     style={{
                         backgroundImage: 'url(/img/bg-003.jpg)',
                         backgroundPositionX: '86%',

@@ -41,7 +41,7 @@ export const HomeScreen = () => {
     return (
         <main
             // ref={el}
-            className="min-h-screen overflow-x-hidden	 page bg-theme-bg"
+            className="min-h-screen page bg-theme-bg"
         >
             {!init && <Loading show={init < 1} />}
             <HomeHead setInit={initOk} show={init >= 1} />
@@ -56,7 +56,7 @@ export const HomeScreen = () => {
                 <div className="fixed right-0 bottom-0 p-4">
                     <button
                         onClick={toggle}
-                        className="py-1 px-4 bg-theme-main text-theme-bg rounded shadow-xl flex items-center"
+                        className="py-1 px-4 bg-theme-main text-theme-bg shadow-xl flex items-center"
                     >
                         <PiCatLight size={32} />
                         <span className="pl-4" />
