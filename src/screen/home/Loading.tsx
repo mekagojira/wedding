@@ -80,16 +80,15 @@ export function Loading({ setInit }: { setInit: () => void }) {
                 </div>
             </div>
             <img
-                src={'/img/manhlinh-banner-03.jpg'}
-                alt="Background"
-                loading="lazy"
-                onLoad={() => setInit()}
-                style={{ display: 'none' }}
-            />
-            <img
                 src={'/img/manhlinh-banner-03-min.jpg'}
                 alt="Background"
                 loading="eager"
+                style={{ display: 'none' }}
+            />
+            <img
+                src={'/img/manhlinh-banner-03.jpg'}
+                alt="Background"
+                loading="lazy"
                 onLoad={() => setInit()}
                 style={{ display: 'none' }}
             />
