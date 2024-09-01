@@ -57,17 +57,18 @@ export default function HomeHead({
                     }}
                 >
                     <img
-                        loading="lazy"
                         src={img}
                         alt="Background"
                         onLoad={() => setInit()}
                         style={{ display: 'none' }}
                     />
                     <img
-                        loading="lazy"
                         src={fullSizeImg}
                         alt="Background"
-                        onLoad={() => setFetched(true)}
+                        onLoad={() => {
+                            setFetched(true)
+                            console.log('FETCHed')
+                        }}
                         style={{ display: 'none' }}
                     />
                     <div className="relative w-full h-full flex flex-wrap items-start md:items-end justify-center pt-16 md:p-0">

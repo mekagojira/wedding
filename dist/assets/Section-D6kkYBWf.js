@@ -1,0 +1,1 @@
+import{j as n}from"./index-DirIBGnv.js";function c(e){return n.jsx("section",{style:e.style||{},className:`w-screen ${e.container?"container mx-auto px-4 md:px-0":""}`,children:e.children})}export{c as S};
