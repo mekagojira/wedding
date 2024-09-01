@@ -47,11 +47,15 @@ export const HomeScreen = () => {
                 <HomeHead setInit={initOk} show={init >= 1} />
 
                 <WeGettingMarried />
-                <SaveTheDate />
-                <Album />
-                <Congratulation />
-                <Foot />
-                <Modal show={openModal} toggle={toggle} />
+                {init && (
+                    <>
+                        <SaveTheDate />
+                        <Album />
+                        <Congratulation />
+                        <Foot />
+                        <Modal show={openModal} toggle={toggle} />
+                    </>
+                )}
                 {init && (
                     <div className="fixed right-0 bottom-0 p-4">
                         <button
