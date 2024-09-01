@@ -1,7 +1,7 @@
 export function Divider({ r }: { r?: boolean }) {
     return (
         <div
-            className={`flex items-center ${r ? 'justify-start' : 'justify-end'} py-4`}
+            className={`flex items-center ${r ? 'justify-start' : 'justify-end'} py-4 overflow-hidden`}
         >
             <img
                 src={'/assets/bg-2.png'}
