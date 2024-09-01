@@ -57,12 +57,14 @@ export default function HomeHead({
                     }}
                 >
                     <img
+                        loading="lazy"
                         src={img}
                         alt="Background"
                         onLoad={() => setInit()}
                         style={{ display: 'none' }}
                     />
                     <img
+                        loading="lazy"
                         src={fullSizeImg}
                         alt="Background"
                         onLoad={() => setFetched(true)}
@@ -99,6 +101,7 @@ export default function HomeHead({
                     }}
                 >
                     <img
+                        loading="lazy"
                         src={desktopFullSizeImg}
                         alt="Background"
                         onLoad={() => {

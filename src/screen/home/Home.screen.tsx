@@ -46,9 +46,9 @@ export const HomeScreen = () => {
             >
                 <HomeHead setInit={initOk} show={init >= 1} />
 
-                <WeGettingMarried />
                 {init && (
                     <>
+                        <WeGettingMarried />
                         <SaveTheDate />
                         <Album />
                         <Congratulation />
