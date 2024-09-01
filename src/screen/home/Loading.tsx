@@ -14,21 +14,62 @@ export function Loading() {
                 backgroundPosition: 'center',
             }}
         >
-            <div className="relative w-full h-full flex flex-col flex-wrap items-center justify-start md:items-end pt-16 md:p-0 backdrop-blur-sm">
-                <div className="text-center font-viao text-theme-bg">
-                    <div className="text-2xl font-bold font-['Montserrat']">
+            <div
+                style={{
+                    position: 'relative',
+                    width: '100%',
+                    height: '100%',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    flexWrap: 'wrap',
+                    alignItems: 'center',
+                    justifyContent: 'start',
+                    paddingTop: '16px',
+                    padding: '0px', // Adjust padding as needed for different screen sizes
+                    backdropFilter: 'blur(8px)', // Adjust blur radius as needed
+                }}
+            >
+                <div
+                    style={{
+                        textAlign: 'center',
+                        backgroundColor: 'var(--theme-bg)', // Replace with your theme background color
+                    }}
+                >
+                    <div
+                        style={{
+                            fontSize: '24px',
+                            fontWeight: 'bold',
+                        }}
+                    >
                         SAVE THE DATE
                     </div>
-                    <div className="pt-4 md:pt-8" />
-                    <div className="text-4xl md:text-6xl flex">
-                        Đức Mạnh <span className="ml-1 md:ml-4" />
+                    <div style={{ paddingTop: '4px', marginTop: '8px' }} />
+                    <div
+                        style={{
+                            fontSize: '32px',
+                            marginTop: '8px',
+                            display: 'flex',
+                        }}
+                    >
+                        Đức Mạnh <span style={{ marginLeft: '4px' }} />
                         &
-                        <span className="mr-1 md:mr-3" />
+                        <span style={{ marginRight: '4px' }} />
                         Thùy Linh
                     </div>
-                    <div className="pt-4 md:pt-8" />
-                    <div className=" px-4 md:px-0">
-                        <div className="font-viao font-semibold font-['Montserrat'] text-3xl md:text-4xl px-8 py-2 md:py-4 border-2 border-white shadow-2xl focus:bg-white focus:text-transparent active:bg-white active:text-border-theme-main transition-all">
+                    <div style={{ paddingTop: '4px', marginTop: '8px' }} />
+                    <div style={{ padding: '8px 0px' }}>
+                        <div
+                            style={{
+                                fontWeight: 'semibold',
+                                fontSize: '24px',
+                                padding: '8px 16px',
+                                border: '2px solid white',
+                                boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.2)',
+                                backgroundColor: 'transparent',
+                                transition: 'background-color 0.2s ease-in-out',
+                                cursor: 'pointer',
+                            }}
+                        >
                             22.09.2024
                         </div>
                     </div>
