@@ -1,6 +1,6 @@
 import { AiFillHeart } from 'react-icons/ai'
 
-export const Foot = () => {
+export default function Foot() {
     return (
         <div className="bg-theme-main">
             <div className="mx-auto container">

@@ -1,7 +1,6 @@
 import { useState, lazy } from 'react'
 import { TbClover } from 'react-icons/tb'
 import { Loading } from 'screen/home/Loading.tsx'
-import { Foot } from 'screen/home/Foot.tsx'
 
 const Congratulation = lazy(() => import('./Congratulation'))
 const WeGettingMarried = lazy(() => import('./WeGettingMarried'))
@@ -9,6 +8,7 @@ const SaveTheDate = lazy(() => import('./SaveTheDate'))
 const Album = lazy(() => import('./Album'))
 const Modal = lazy(() => import('./Modal'))
 const HomeHead = lazy(() => import('./Head'))
+const Foot = lazy(() => import('./Foot'))
 
 export const HomeScreen = () => {
     const [openModal, setOpenModal] = useState<boolean>(false)
