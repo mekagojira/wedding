@@ -86,6 +86,7 @@ export const SaveTheDate = () => {
                                 <div className="flex flex-col items-center justify-center px-2">
                                     <div className="w-full">
                                         <Calendar
+                                            activeStartDate={new Date()}
                                             showNeighboringMonth={false}
                                             value={new Date('2024-09-22')}
                                             showNavigation={false}

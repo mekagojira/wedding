@@ -11,13 +11,14 @@ body {
   min-height: 100vh;
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 
 .react-calendar__tile--active {
   background: #7a0707;
   border-radius: 9999px;
   color: #fff9f0;
+  font-weight: bold;
 }
 
 .image-gallery-image {
@@ -67,6 +68,15 @@ input {
 .image-gallery-slide .image-gallery-image {
   object-fit: cover;
   height: 70vh;
+}
+
+.react-calendar__tile--now {
+  abbr {
+    font-weight: bold;
+    border-bottom: 2px solid #7a0707;
+    color: #7a0707;
+    padding: 0 .25rem;
+  }
 }
 
 :root {
