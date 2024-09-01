@@ -106,7 +106,7 @@ export const SaveTheDate = () => {
                         </div>
                     </motion.div>
                 </div>
-                <div className="py-8">
+                <div className="">
                     <Divider r />
                 </div>
             </div>
