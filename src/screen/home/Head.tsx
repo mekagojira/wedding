@@ -3,13 +3,13 @@ import { IoHeart } from 'react-icons/io5'
 import { Section } from 'component/section/Section.tsx'
 import { motion } from 'framer-motion'
 
-export const HomeHead = ({
+export default function HomeHead({
     setInit,
     show,
 }: {
     show: boolean
     setInit: () => void
-}) => {
+}) {
     const images = [
         '/img/manhlinh-banner-03.jpg',
         '/img/manhlinh-banner-02.JPG',

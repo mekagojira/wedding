@@ -3,7 +3,13 @@ import React, { useState } from 'react'
 
 const endpoint = 'https://wedding-api.manh.moe/plan/register'
 
-export function Modal({ toggle, show }: { show: boolean; toggle: () => void }) {
+export default function Modal({
+    toggle,
+    show,
+}: {
+    show: boolean
+    toggle: () => void
+}) {
     const [name, setName] = useState('')
     const [phone, setPhone] = useState('')
     const [guests, setGuests] = useState('')

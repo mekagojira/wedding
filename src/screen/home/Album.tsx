@@ -19,7 +19,7 @@ const imgs = [
     thumbnail: item,
 }))
 
-export function Album() {
+export default function Album() {
     const gallery = useRef<ImageGallery>(null)
     const [f, setF] = useState<boolean>(false)
 
