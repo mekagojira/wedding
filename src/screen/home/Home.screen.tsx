@@ -3,8 +3,7 @@ import { WeGettingMarried } from 'screen/home/WeGettingMarried.tsx'
 import { SaveTheDate } from 'screen/home/SaveTheDate.tsx'
 import { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
-// import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { PiCatLight } from 'react-icons/pi'
+import { TbClover } from 'react-icons/tb'
 import { Modal } from 'screen/home/Modal.tsx'
 import { Congratulation } from 'screen/home/Congratulation.tsx'
 import { Album } from 'screen/home/Album.tsx'
@@ -56,11 +55,10 @@ export const HomeScreen = () => {
                 <div className="fixed right-0 bottom-0 p-4">
                     <button
                         onClick={toggle}
-                        className="py-1 px-4 bg-theme-main text-theme-bg shadow-xl flex items-center"
+                        className="motion-safe:animate-bounce relative py-2 shadow-2xl px-4 bg-theme-main text-theme-bg flex items-center"
                     >
-                        <PiCatLight size={32} />
-                        <span className="pl-4" />
-                        Xác nhận tham dự
+                        <TbClover />
+                        <span className="pl-2">Xác nhận tham dự</span>
                     </button>
                 </div>
             )}
