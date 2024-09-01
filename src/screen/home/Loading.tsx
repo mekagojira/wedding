@@ -11,7 +11,7 @@ export function Loading() {
                 top: 0,
                 zIndex: 100,
                 backgroundSize: 'cover',
-                backgroundPosition: 'container',
+                backgroundPosition: 'center',
             }}
         >
             {/* <div className="relative w-full h-full flex flex-col flex-wrap items-center justify-start md:items-end pt-16 md:p-0 backdrop-blur-sm">

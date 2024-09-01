@@ -1,1 +1,0 @@
-import{j as t}from"./index-BXbbtJ_L.js";function a({r:s}){return t.jsx("div",{className:`flex items-center ${s?"justify-start":"justify-end"} py-4 overflow-hidden`,children:t.jsx("img",{src:"/assets/bg-2.png",alt:"",className:`${s?"rotate-180":""} w-5/6 md:w-96 ${s?"-translate-x-4":"translate-x-4"}`})})}export{a as D};
