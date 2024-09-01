@@ -2,8 +2,16 @@ import { Section } from 'component/section/Section.tsx'
 import { HiHeart } from 'react-icons/hi'
 import { motion } from 'framer-motion'
 import { Divider } from 'component/section/Divider.tsx'
+import { useEffect, useState } from 'react'
 
 export const WeGettingMarried = () => {
+    const [guest, setGuest] = useState<string>('')
+
+    useEffect(() => {
+        const search = new URLSearchParams(window.location.search)
+        setGuest(search.get('guest') || search.get('g') || '')
+    }, [])
+
     return (
         <>
             <Section>
@@ -44,11 +52,11 @@ export const WeGettingMarried = () => {
                             <div className="box-e text-justify md:w-1/2 text-theme-second font-viao text-lg">
                                 Sau hơn một thập kỷ đồng hành, cuối cùng đã đến
                                 ngày chúng mình trở thành một gia đình. Trân
-                                trọng mời bạn đến chung vui trong ngày trọng đại
-                                này. Sự hiện diện, tình yêu và những lời chúc
-                                tốt đẹp của bạn sẽ làm cho ngày đặc biệt của
-                                chúng mình thêm trọn vẹn. Xin chân thành cảm ơn
-                                tình cảm của bạn !
+                                trọng mời {guest || 'bạn'} đến chung vui trong
+                                ngày trọng đại này. Sự hiện diện, tình yêu và
+                                những lời chúc tốt đẹp của bạn sẽ làm cho ngày
+                                đặc biệt của chúng mình thêm trọn vẹn. Xin chân
+                                thành cảm ơn tình cảm của bạn !
                             </div>
                         </motion.div>
                     </div>
