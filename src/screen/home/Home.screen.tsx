@@ -1,5 +1,4 @@
 import { HomeHead } from 'screen/home/Head.tsx'
-import { WeGettingMarried } from 'screen/home/WeGettingMarried.tsx'
 import { SaveTheDate } from 'screen/home/SaveTheDate.tsx'
 import { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
@@ -9,6 +8,7 @@ import { Congratulation } from 'screen/home/Congratulation.tsx'
 import { Album } from 'screen/home/Album.tsx'
 import { Loading } from 'screen/home/Loading.tsx'
 import { Foot } from 'screen/home/Foot.tsx'
+import { WeGettingMarried } from 'screen/home/WeGettingMarried.tsx'
 
 export const HomeScreen = () => {
     const [openModal, setOpenModal] = useState<boolean>(false)
@@ -42,7 +42,7 @@ export const HomeScreen = () => {
             // ref={el}
             className="min-h-screen w-screen overflow-hidden page bg-theme-bg"
         >
-            {!init && <Loading show={init < 1} />}
+            {!init && <Loading show={init <= 0} />}
             <HomeHead setInit={initOk} show={init >= 1} />
 
             <WeGettingMarried />

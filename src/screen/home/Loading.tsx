@@ -4,13 +4,13 @@ import ReactLoading from 'react-loading'
 export function Loading({ show }: { show: boolean }) {
     return (
         <div
-            className={`h-screen w-screen top-0 left-0 fixed z-50 bg-theme-bg opacity-100 ${!show ? 'opacity-0' : ''}`}
+            className={`h-screen w-screen top-0 left-0 fixed z-50 bg-theme-bg opacity-100 bg-center bg-cover transition-all ${!show ? 'opacity-0' : ''}`}
             style={{
-                transition: 'all 0.2s linear',
+                backgroundImage: `url(/img/manhlinh-banner-03-min.jpg)`,
             }}
         >
-            <div className="relative w-full h-full flex flex-col flex-wrap items-start md:items-end items-center pt-16 md:p-0">
-                <div className="text-center font-viao text-theme-main">
+            <div className="relative w-full h-full flex flex-col flex-wrap items-center justify-start md:items-end pt-16 md:p-0 backdrop-blur-sm">
+                <div className="text-center font-viao text-theme-bg">
                     <div className="text-2xl font-bold font-['Montserrat']">
                         SAVE THE DATE
                     </div>
@@ -30,12 +30,14 @@ export function Loading({ show }: { show: boolean }) {
                 </div>
 
                 <div className="pt-32" />
-                <ReactLoading
-                    type={'spin'}
-                    color={'#7a0707'}
-                    height={64}
-                    width={64}
-                />
+                <div className="flex justify-center w-full">
+                    <ReactLoading
+                        type={'spin'}
+                        color={'#fff9f0'}
+                        height={64}
+                        width={64}
+                    />
+                </div>
             </div>
         </div>
     )
