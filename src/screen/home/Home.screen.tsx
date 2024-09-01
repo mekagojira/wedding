@@ -41,7 +41,7 @@ export const HomeScreen = () => {
     return (
         <main
             // ref={el}
-            className="min-h-screen page bg-theme-bg"
+            className="min-h-screen w-screen overflow-hidden page bg-theme-bg"
         >
             {!init && <Loading show={init < 1} />}
             <HomeHead setInit={initOk} show={init >= 1} />

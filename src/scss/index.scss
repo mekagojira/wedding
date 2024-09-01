@@ -12,7 +12,9 @@ body {
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
   overflow-x: hidden;
+  width: 100vw;
 }
+
 
 .react-calendar__tile--active {
   background: #7a0707;
