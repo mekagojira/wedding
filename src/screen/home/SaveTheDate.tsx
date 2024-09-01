@@ -15,7 +15,7 @@ export const SaveTheDate = () => {
     return (
         <Section>
             <div className="flex flex-col items-center pt-4">
-                <div className="text-center font-old-standard md:text-2xl md:md:w-96">
+                <div className="text-center font-old-standard md:text-2xl md:w-1/2">
                     <div className="text-xl font-thin">
                         Trân trọng kính mời {guest || 'bạn'}
                     </div>
