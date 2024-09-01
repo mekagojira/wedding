@@ -84,7 +84,7 @@ export function Congratulation() {
             <div className="hidden md:block">
                 <Section container>
                     <div className="flex flex-col items-center pt-8 pb-16">
-                        <div className="font-viao w-96 text-2xl text-center uppercase shadow-lg font-black bg-theme-main text-theme-bg px-3 py-2">
+                        <div className="font-viao text-2xl text-center uppercase shadow-xl font-black bg-theme-main text-theme-bg px-3 py-2">
                             Hộp mừng cưới
                         </div>
                     </div>
@@ -93,7 +93,7 @@ export function Congratulation() {
             </div>
             <div className="block md:hidden">
                 <div className="flex flex-col items-center pt-8 pb-16">
-                    <div className="font-viao w-96 text-2xl text-center uppercase shadow-lg font-black bg-theme-main text-theme-bg px-3 py-2">
+                    <div className="font-viao text-2xl text-center uppercase shadow-xl font-black bg-theme-main text-theme-bg px-3 py-2">
                         Hộp mừng cưới
                     </div>
                 </div>

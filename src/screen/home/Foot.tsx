@@ -4,7 +4,7 @@ export const Foot = () => {
     return (
         <div className="bg-theme-main">
             <div className="mx-auto container">
-                <div className="py-8 px-4 md:px-0 text-theme-bg font-['Playfair+Display']">
+                <div className="py-16 px-4 md:p-8 text-theme-bg font-viao">
                     <div className="text-3xl md:text-3xl text-center flex justify-center items-center">
                         Mạnh <div className="pl-1" />
                         <AiFillHeart />

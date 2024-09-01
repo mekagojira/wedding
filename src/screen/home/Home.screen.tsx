@@ -9,6 +9,7 @@ import { Modal } from 'screen/home/Modal.tsx'
 import { Congratulation } from 'screen/home/Congratulation.tsx'
 import { Album } from 'screen/home/Album.tsx'
 import { Loading } from 'screen/home/Loading.tsx'
+import { Foot } from 'screen/home/Foot.tsx'
 
 export const HomeScreen = () => {
     const [openModal, setOpenModal] = useState<boolean>(false)
@@ -40,7 +41,7 @@ export const HomeScreen = () => {
     return (
         <main
             // ref={el}
-            className="min-h-screen overflow-x-hidden page bg-theme-bg"
+            className="min-h-screen overflow-x-hidden	 page bg-theme-bg"
         >
             {!init && <Loading show={init < 1} />}
             <HomeHead setInit={initOk} show={init >= 1} />
@@ -49,6 +50,7 @@ export const HomeScreen = () => {
             <SaveTheDate />
             <Album />
             <Congratulation />
+            <Foot />
             <Modal show={openModal} toggle={toggle} />
             {init && (
                 <div className="fixed right-0 bottom-0 p-4">
