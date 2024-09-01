@@ -1,3 +1,5 @@
+import { IoHeart } from 'react-icons/io5'
+
 export function Loading({ setInit }: { setInit: () => void }) {
     return (
         <>
@@ -52,7 +54,7 @@ export function Loading({ setInit }: { setInit: () => void }) {
                             }}
                         >
                             Đức Mạnh <span style={{ marginLeft: '4px' }} />
-                            &
+                            <IoHeart color="white" />
                             <span style={{ marginRight: '4px' }} />
                             Thùy Linh
                         </div>
