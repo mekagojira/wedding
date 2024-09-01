@@ -39,7 +39,7 @@ export function Loading({ setInit }: { setInit: () => void }) {
                     >
                         <div
                             style={{
-                                fontSize: '24px',
+                                fontSize: '1.5rem',
                                 fontWeight: 'bold',
                             }}
                         >
@@ -48,7 +48,7 @@ export function Loading({ setInit }: { setInit: () => void }) {
                         <div style={{ paddingTop: '4px', marginTop: '8px' }} />
                         <div
                             style={{
-                                fontSize: '32px',
+                                fontSize: '2.5rem',
                                 marginTop: '8px',
                                 display: 'flex',
                             }}
@@ -63,7 +63,7 @@ export function Loading({ setInit }: { setInit: () => void }) {
                             <div
                                 style={{
                                     fontWeight: 'semibold',
-                                    fontSize: '24px',
+                                    fontSize: '1.5rem',
                                     padding: '8px 16px',
                                     border: '2px solid white',
                                     boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.2)',
