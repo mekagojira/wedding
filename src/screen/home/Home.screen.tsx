@@ -44,7 +44,11 @@ export const HomeScreen = () => {
                 // ref={el}
                 className="min-h-screen w-screen overflow-hidden page bg-theme-bg"
             >
-                <HomeHead setInit={initOk} show={init >= 1} />
+                <HomeHead
+                    // setInit={() => {}}
+                    setInit={initOk}
+                    show={init >= 1}
+                />
 
                 {init && (
                     <>

@@ -12,6 +12,7 @@ export function Loading() {
                 zIndex: 100,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
+                color: '#fff9f0',
             }}
         >
             <div
@@ -24,15 +25,13 @@ export function Loading() {
                     flexWrap: 'wrap',
                     alignItems: 'center',
                     justifyContent: 'start',
-                    paddingTop: '16px',
-                    padding: '0px', // Adjust padding as needed for different screen sizes
+                    paddingTop: '4rem',
                     backdropFilter: 'blur(8px)', // Adjust blur radius as needed
                 }}
             >
                 <div
                     style={{
                         textAlign: 'center',
-                        backgroundColor: 'var(--theme-bg)', // Replace with your theme background color
                     }}
                 >
                     <div
