@@ -9,7 +9,10 @@ export const HomeHead = ({ setInit }: { setInit: () => void }) => {
     ]
 
     const [fetched, setFetched] = useState(false)
+    const [desktopFetch, setDesktopFetched] = useState(false)
 
+    const desktopFullSizeImg = '/img/manhlinh-banner-02.JPG'
+    const desktopPreviewImg = '/img/manhlinh-banner-2-min.jpg'
     const fullSizeImg = '/img/manhlinh-banner-01.JPG'
 
     const [img] = useState(images[0])
@@ -64,11 +67,19 @@ export const HomeHead = ({ setInit }: { setInit: () => void }) => {
                 <div
                     className="h-full transition-all hidden md:block"
                     style={{
-                        background: `url(${images[1]})`,
+                        backgroundImage: `url(${desktopFetch ? desktopFullSizeImg : desktopPreviewImg})`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center 40%',
                     }}
                 >
+                    <img
+                        src={desktopFullSizeImg}
+                        alt="Background"
+                        onLoad={() => {
+                            setDesktopFetched(true)
+                        }}
+                        style={{ display: 'none' }} // Hide the image element
+                    />
                     <div className="relative w-full h-full flex flex-wrap items-end justify-center pb-20">
                         <div className="text-center font-viao text-theme-bg">
                             <div className="text-2xl font-bold font-['Montserrat']">
