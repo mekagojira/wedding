@@ -3,13 +3,7 @@ import { IoHeart } from 'react-icons/io5'
 import { Section } from 'component/section/Section.tsx'
 import { motion } from 'framer-motion'
 
-export default function HomeHead({
-    setInit,
-    show,
-}: {
-    show: boolean
-    setInit: () => void
-}) {
+export default function HomeHead() {
     const images = [
         '/img/manhlinh-banner-03.jpg',
         '/img/manhlinh-banner-02.JPG',
@@ -57,12 +51,6 @@ export default function HomeHead({
                     }}
                 >
                     <img
-                        src={img}
-                        alt="Background"
-                        onLoad={() => setInit()}
-                        style={{ display: 'none' }}
-                    />
-                    <img
                         src={fullSizeImg}
                         alt="Background"
                         onLoad={() => {
@@ -72,25 +60,21 @@ export default function HomeHead({
                         style={{ display: 'none' }}
                     />
                     <div className="relative w-full h-full flex flex-wrap items-start md:items-end justify-center pt-16 md:p-0">
-                        {show ? (
-                            <>
-                                <motion.div
-                                    initial={{ opacity: 0 }}
-                                    whileInView={{ opacity: 1 }}
-                                    animate={{ opacity: 0 }}
-                                    transition={{
-                                        type: 'spring',
-                                        stiffness: 100,
-                                        ease: 'linear',
-                                        duration: 3000,
-                                    }}
-                                >
-                                    {head}
-                                </motion.div>
-                            </>
-                        ) : (
-                            <>{head}</>
-                        )}
+                        <>
+                            <motion.div
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                animate={{ opacity: 0 }}
+                                transition={{
+                                    type: 'spring',
+                                    stiffness: 100,
+                                    ease: 'linear',
+                                    duration: 3000,
+                                }}
+                            >
+                                {head}
+                            </motion.div>
+                        </>
                     </div>
                 </div>
                 <div

@@ -39,19 +39,14 @@ export const HomeScreen = () => {
 
     return (
         <>
-            {!init && <Loading />}
+            {!init && <Loading setInit={initOk} />}
             <main
                 // ref={el}
                 className="min-h-screen w-screen overflow-hidden page bg-theme-bg"
             >
-                <HomeHead
-                    // setInit={() => {}}
-                    setInit={initOk}
-                    show={init >= 1}
-                />
-
                 {init && (
                     <>
+                        <HomeHead />
                         <WeGettingMarried />
                         <SaveTheDate />
                         <Album />
