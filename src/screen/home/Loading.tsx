@@ -16,6 +16,7 @@ export function Loading({ setInit }: { setInit: () => void }) {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     color: '#fff9f0',
+                    fontFamily: 'Viaoda Libre',
                 }}
             >
                 <div
@@ -48,7 +49,7 @@ export function Loading({ setInit }: { setInit: () => void }) {
                         <div style={{ paddingTop: '4px', marginTop: '8px' }} />
                         <div
                             style={{
-                                fontSize: '2.5rem',
+                                fontSize: '2.25rem',
                                 marginTop: '8px',
                                 display: 'flex',
                             }}
@@ -59,7 +60,7 @@ export function Loading({ setInit }: { setInit: () => void }) {
                             Thùy Linh
                         </div>
                         <div style={{ paddingTop: '4px', marginTop: '8px' }} />
-                        <div style={{ padding: '8px 0px' }}>
+                        <div style={{ padding: '8px' }}>
                             <div
                                 style={{
                                     fontWeight: 'semibold',
