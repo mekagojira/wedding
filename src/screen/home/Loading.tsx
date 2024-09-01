@@ -14,7 +14,7 @@ export function Loading() {
                 backgroundPosition: 'center',
             }}
         >
-            {/* <div className="relative w-full h-full flex flex-col flex-wrap items-center justify-start md:items-end pt-16 md:p-0 backdrop-blur-sm">
+            <div className="relative w-full h-full flex flex-col flex-wrap items-center justify-start md:items-end pt-16 md:p-0 backdrop-blur-sm">
                 <div className="text-center font-viao text-theme-bg">
                     <div className="text-2xl font-bold font-['Montserrat']">
                         SAVE THE DATE
@@ -22,7 +22,7 @@ export function Loading() {
                     <div className="pt-4 md:pt-8" />
                     <div className="text-4xl md:text-6xl flex">
                         Đức Mạnh <span className="ml-1 md:ml-4" />
-                        <IoHeart color="white" />
+                        &
                         <span className="mr-1 md:mr-3" />
                         Thùy Linh
                     </div>
@@ -33,7 +33,7 @@ export function Loading() {
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
         </div>
     )
 }
