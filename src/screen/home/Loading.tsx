@@ -1,5 +1,4 @@
 import { IoHeart } from 'react-icons/io5'
-import ReactLoading from 'react-loading'
 
 export function Loading() {
     return (
@@ -27,16 +26,6 @@ export function Loading() {
                             22.09.2024
                         </div>
                     </div>
-                </div>
-
-                <div className="pt-32" />
-                <div className="flex justify-center w-full">
-                    <ReactLoading
-                        type={'spin'}
-                        color={'#fff9f0'}
-                        height={64}
-                        width={64}
-                    />
                 </div>
             </div>
         </div>
