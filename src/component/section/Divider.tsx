@@ -6,7 +6,7 @@ export function Divider({ r }: { r?: boolean }) {
             <img
                 src={'/assets/bg-2.png'}
                 alt={''}
-                className={`${r ? 'rotate-180' : ''} w-5/6 ${r ? `-translate-x-4` : `translate-x-4`}`}
+                className={`${r ? 'rotate-180' : ''} w-5/6 md:w-96 ${r ? `-translate-x-4` : `translate-x-4`}`}
             />
         </div>
     )

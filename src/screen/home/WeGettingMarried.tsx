@@ -15,7 +15,7 @@ export const WeGettingMarried = () => {
     return (
         <>
             <Section>
-                <div className="py-8">
+                <div className="py-8 flex justify-center">
                     <Divider r={true} />
                 </div>
                 <div className="flex flex-col items-center">
@@ -32,33 +32,36 @@ export const WeGettingMarried = () => {
                         <img
                             alt={''}
                             src={'/img/manhlinh-03.JPG'}
-                            className="shadow-lg rounded shadow-xl"
+                            className="shadow-lg rounded md:w-1/2 shadow-xl"
                         />
                     </div>
                     <div className="text-center text-theme-main font-['Corinthia'] italic text-5xl py-8">
                         Đức Mạnh -Thùy Linh
                     </div>
-                    <div className="container mx-auto px-4 md:px-0 flex flex-col items-center">
-                        <motion.div
-                            initial={{ x: 0, y: 200 }}
-                            whileInView={{ x: 0, y: 0 }}
-                            animate={{ x: 0, y: 200 }}
-                            transition={{
-                                type: 'spring',
-                                stiffness: 100,
-                                ease: 'linear',
-                            }}
-                        >
-                            <div className="box-e text-justify md:w-1/2 text-theme-second font-viao text-lg">
-                                Sau hơn một thập kỷ đồng hành, cuối cùng đã đến
-                                ngày chúng mình trở thành một gia đình. Trân
-                                trọng mời {guest || 'bạn'} đến chung vui trong
-                                ngày trọng đại này. Sự hiện diện, tình yêu và
-                                những lời chúc tốt đẹp của bạn sẽ làm cho ngày
-                                đặc biệt của chúng mình thêm trọn vẹn. Xin chân
-                                thành cảm ơn tình cảm của bạn !
-                            </div>
-                        </motion.div>
+                    <div className="container mx-auto px-4 md:px-0 flex items-center justify-center">
+                        <div className="md:w-1/2">
+                            <motion.div
+                                initial={{ x: 0, y: 200 }}
+                                whileInView={{ x: 0, y: 0 }}
+                                animate={{ x: 0, y: 200 }}
+                                transition={{
+                                    type: 'spring',
+                                    stiffness: 100,
+                                    ease: 'linear',
+                                }}
+                            >
+                                <div className="box-e md:p-8 text-justify text-theme-second font-viao text-lg">
+                                    Sau hơn một thập kỷ đồng hành, cuối cùng đã
+                                    đến ngày chúng mình trở thành một gia đình.
+                                    Trân trọng mời {guest || 'bạn'} đến chung
+                                    vui trong ngày trọng đại này. Sự hiện diện,
+                                    tình yêu và những lời chúc tốt đẹp của bạn
+                                    sẽ làm cho ngày đặc biệt của chúng mình thêm
+                                    trọn vẹn. Xin chân thành cảm ơn tình cảm của
+                                    bạn !
+                                </div>
+                            </motion.div>
+                        </div>
                     </div>
                     <div className="py-8">
                         <Divider />
