@@ -37,36 +37,29 @@ export const HomeScreen = () => {
 
     const initOk = () => setInit(init + 1)
 
+    if (!init) return <Loading setInit={initOk} />
+
     return (
-        <>
-            {!init && <Loading setInit={initOk} />}
-            <main
-                // ref={el}
-                className="min-h-screen w-screen overflow-hidden page bg-theme-bg"
-            >
-                {init && (
-                    <>
-                        <HomeHead />
-                        <WeGettingMarried />
-                        <SaveTheDate />
-                        <Album />
-                        <Congratulation />
-                        <Foot />
-                        <Modal show={openModal} toggle={toggle} />
-                    </>
-                )}
-                {init && (
-                    <div className="fixed right-0 bottom-0 p-4">
-                        <button
-                            onClick={toggle}
-                            className="motion-safe:animate-bounce relative py-2 shadow-2xl px-4 bg-theme-main text-theme-bg flex items-center"
-                        >
-                            <TbClover />
-                            <span className="pl-2">Xác nhận tham dự</span>
-                        </button>
-                    </div>
-                )}
-            </main>
-        </>
+        <main
+            // ref={el}
+            className="min-h-screen w-screen overflow-hidden page bg-theme-bg"
+        >
+            <HomeHead />
+            <WeGettingMarried />
+            <SaveTheDate />
+            <Album />
+            <Congratulation />
+            <Foot />
+            <Modal show={openModal} toggle={toggle} />
+            <div className="fixed right-0 bottom-0 p-4">
+                <button
+                    onClick={toggle}
+                    className="motion-safe:animate-bounce relative py-2 shadow-2xl px-4 bg-theme-main text-theme-bg flex items-center"
+                >
+                    <TbClover />
+                    <span className="pl-2">Xác nhận tham dự</span>
+                </button>
+            </div>
+        </main>
     )
 }
