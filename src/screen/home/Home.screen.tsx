@@ -1,14 +1,16 @@
 import { HomeHead } from 'screen/home/Head.tsx'
-import { SaveTheDate } from 'screen/home/SaveTheDate.tsx'
 import { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import { TbClover } from 'react-icons/tb'
 import { Modal } from 'screen/home/Modal.tsx'
-import { Congratulation } from 'screen/home/Congratulation.tsx'
 import { Album } from 'screen/home/Album.tsx'
 import { Loading } from 'screen/home/Loading.tsx'
 import { Foot } from 'screen/home/Foot.tsx'
-import { WeGettingMarried } from 'screen/home/WeGettingMarried.tsx'
+import { lazy } from 'react'
+
+const Congratulation = lazy(() => import('./Congratulation'))
+const WeGettingMarried = lazy(() => import('./WeGettingMarried'))
+const SaveTheDate = lazy(() => import('./SaveTheDate'))
 
 export const HomeScreen = () => {
     const [openModal, setOpenModal] = useState<boolean>(false)

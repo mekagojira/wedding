@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Divider } from 'component/section/Divider.tsx'
 
-export const SaveTheDate = () => {
+export default function SaveTheDate() {
     const [guest, setGuest] = useState<string>('')
 
     useEffect(() => {

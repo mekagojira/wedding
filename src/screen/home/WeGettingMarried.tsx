@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { Divider } from 'component/section/Divider.tsx'
 import { useEffect, useState } from 'react'
 
-export const WeGettingMarried = () => {
+export default function WeGettingMarried() {
     const [guest, setGuest] = useState<string>('')
 
     useEffect(() => {

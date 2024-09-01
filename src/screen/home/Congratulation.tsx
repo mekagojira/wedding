@@ -1,4 +1,4 @@
-export function Congratulation() {
+export default function Congratulation() {
     const info = [
         {
             bank: 'VP Bank',
