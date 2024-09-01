@@ -14,9 +14,11 @@ const imgs = [
     '/gallery/MAX06249-min.jpg',
     '/gallery/MAX06404-min.jpg',
     '/gallery/MAX06469-min.jpg',
-].map(item => ({
+].map((item, i) => ({
     original: item,
     thumbnail: item,
+    originalAlt: `${i}`,
+    thumbnailAlt: `${i}`,
 }))
 
 export default function Album() {
