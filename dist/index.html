@@ -45,8 +45,8 @@
             name="google-site-verification"
             content="QreDG5E36tEkqWKaeHZsu3GX3mUks7cTIF_jqjvaAaM"
         />
-      <script type="module" crossorigin src="/assets/index-5lXTUn1B.js"></script>
-      <link rel="stylesheet" crossorigin href="/assets/index-D4gDZMN2.css">
+      <script type="module" crossorigin src="/assets/index-DWTvpl0l.js"></script>
+      <link rel="stylesheet" crossorigin href="/assets/index-BRI_Clul.css">
     </head>
     <body>
         <link rel="preload" href="/img/manhlinh-banner-03-min.jpg" as="bg" />
@@ -55,5 +55,35 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
         /> -->
+        <script>
+            // Function to load fonts with a specific family and weights
+            function loadFont(fontFamily, weights) {
+                const fontUrl = `https://fonts.googleapis.com/css2?family=${fontFamily}:${weights}&display=swap`
+                const link = document.createElement('link')
+                link.href = fontUrl
+                link.rel = 'stylesheet'
+                link.as = 'async' // This makes the font load asynchronously
+                document.head.appendChild(link)
+            }
+
+            // Define font families and weights
+            const fontFamilies = [
+                'Lovers+Quarrel',
+                'Montserrat:ital,wght@0,100..900;1,100..900',
+                'Old+Standard+TT:ital,wght@0,400;0,700;1,400',
+                'Playfair+Display:ital,wght@0,400..900;1,400..900',
+                'Viaoda+Libre',
+                'Corinthia:wght@400;700',
+            ]
+
+            // Load fonts on an event (e.g., user interaction)
+            document.addEventListener('DOMContentLoaded', () => {
+                // You can replace this with a specific event when you want fonts to load
+                fontFamilies.forEach(fontFamily => {
+                    const weights = fontFamily.split(':')[1] || '' // Extract weights if present
+                    loadFont(fontFamily.split(':')[0], weights) // Load font with family and weights
+                })
+            })
+        </script>
     </body>
 </html>
