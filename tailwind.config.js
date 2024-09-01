@@ -24,7 +24,7 @@ export default {
                 theme: {
                     main: '#7a0707',
                     second: '#380303',
-                    bg: '#fff9f0',
+                    bg: '#7a0707',
                 },
             },
         },
