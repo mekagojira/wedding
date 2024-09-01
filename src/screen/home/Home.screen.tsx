@@ -1,9 +1,7 @@
-import { useEffect, useRef, useState } from 'react'
-import { gsap } from 'gsap'
+import { useState, lazy } from 'react'
 import { TbClover } from 'react-icons/tb'
 import { Loading } from 'screen/home/Loading.tsx'
 import { Foot } from 'screen/home/Foot.tsx'
-import { lazy } from 'react'
 
 const Congratulation = lazy(() => import('./Congratulation'))
 const WeGettingMarried = lazy(() => import('./WeGettingMarried'))
@@ -18,24 +16,24 @@ export const HomeScreen = () => {
 
     const toggle = () => setOpenModal(!openModal)
 
-    const el = useRef(null)
-    const child = gsap.utils.selector(el)
-    const tl = gsap.timeline()
-    // gsap.registerPlugin(ScrollTrigger)
+    // const el = useRef(null)
+    // const child = gsap.utils.selector(el)
+    // const tl = gsap.timeline()
+    // // gsap.registerPlugin(ScrollTrigger)
 
-    useEffect(() => {
-        tl.from(child('h1'), {
-            scrollTrigger: {
-                trigger: child('.section'),
-                toggleActions: 'restart pause resume pause',
-                scroller: '.page',
-            },
-            duration: 2,
-            opacity: 1,
-            x: 1000,
-            ease: 'power3.Out',
-        })
-    }, [child, el, tl])
+    // useEffect(() => {
+    //     tl.from(child('h1'), {
+    //         scrollTrigger: {
+    //             trigger: child('.section'),
+    //             toggleActions: 'restart pause resume pause',
+    //             scroller: '.page',
+    //         },
+    //         duration: 2,
+    //         opacity: 1,
+    //         x: 1000,
+    //         ease: 'power3.Out',
+    //     })
+    // }, [child, el, tl])
 
     const initOk = () => setInit(init + 1)
 

@@ -1,14 +1,17 @@
-import { IoHeart } from 'react-icons/io5'
-
 export function Loading() {
     return (
         <div
-            className={`h-screen w-screen top-0 left-0 fixed z-50 bg-theme-bg opacity-100 bg-center bg-cover`}
+            // className={`h-screen w-screen top-0 left-0 fixed z-50 bg-theme-bg opacity-100 bg-center bg-cover`}
             style={{
                 backgroundImage: `url(/img/manhlinh-banner-03-min.jpg)`,
+                height: '100vh',
+                width: '100vw',
+                position: 'fixed',
+                left: 0,
+                top: 0,
             }}
         >
-            <div className="relative w-full h-full flex flex-col flex-wrap items-center justify-start md:items-end pt-16 md:p-0 backdrop-blur-sm">
+            {/* <div className="relative w-full h-full flex flex-col flex-wrap items-center justify-start md:items-end pt-16 md:p-0 backdrop-blur-sm">
                 <div className="text-center font-viao text-theme-bg">
                     <div className="text-2xl font-bold font-['Montserrat']">
                         SAVE THE DATE
@@ -27,7 +30,7 @@ export function Loading() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
