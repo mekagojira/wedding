@@ -9,7 +9,9 @@ export const WeGettingMarried = () => {
 
     useEffect(() => {
         const search = new URLSearchParams(window.location.search)
-        setGuest(search.get('guest') || search.get('g') || '')
+        setGuest(
+            decodeURIComponent(search.get('guest') || search.get('g') || ''),
+        )
     }, [])
 
     const heart = (left: boolean) => (
