@@ -60,16 +60,13 @@ export default function HomeHead({
                         src={img}
                         alt="Background"
                         onLoad={() => setInit()}
-                        style={{ display: 'none' }} // Hide the image element
+                        style={{ display: 'none' }}
                     />
                     <img
                         src={fullSizeImg}
                         alt="Background"
-                        onLoad={() => {
-                            setFetched(true)
-                            console.log('LOADED')
-                        }}
-                        style={{ display: 'none' }} // Hide the image element
+                        onLoad={() => setFetched(true)}
+                        style={{ display: 'none' }}
                     />
                     <div className="relative w-full h-full flex flex-wrap items-start md:items-end justify-center pt-16 md:p-0">
                         {show ? (
