@@ -1,8 +1,15 @@
 import { useState } from 'react'
 import { IoHeart } from 'react-icons/io5'
 import { Section } from 'component/section/Section.tsx'
+import { motion } from 'framer-motion'
 
-export const HomeHead = ({ setInit }: { setInit: () => void }) => {
+export const HomeHead = ({
+    setInit,
+    show,
+}: {
+    show: boolean
+    setInit: () => void
+}) => {
     const images = [
         '/img/manhlinh-banner-03.jpg',
         '/img/manhlinh-banner-02.JPG',
@@ -16,6 +23,27 @@ export const HomeHead = ({ setInit }: { setInit: () => void }) => {
     const fullSizeImg = '/img/manhlinh-banner-01.JPG'
 
     const [img] = useState(images[0])
+
+    const head = (
+        <div className="text-center font-viao text-white md:text-theme-main">
+            <div className="text-2xl font-bold font-['Montserrat']">
+                SAVE THE DATE
+            </div>
+            <div className="pt-4 md:pt-8" />
+            <div className="text-4xl md:text-6xl flex">
+                Đức Mạnh <span className="ml-1 md:ml-4" />
+                <IoHeart color="white" />
+                <span className="mr-1 md:mr-3" />
+                Thùy Linh
+            </div>
+            <div className="pt-4 md:pt-8" />
+            <div className=" px-4 md:px-0">
+                <div className="font-viao font-semibold font-['Montserrat'] text-3xl md:text-4xl px-8 py-2 md:py-4 border-2 border-white shadow-2xl focus:bg-white focus:text-transparent active:bg-white active:text-border-theme-main transition-all">
+                    22.09.2024
+                </div>
+            </div>
+        </div>
+    )
 
     return (
         <Section>
@@ -44,24 +72,25 @@ export const HomeHead = ({ setInit }: { setInit: () => void }) => {
                         style={{ display: 'none' }} // Hide the image element
                     />
                     <div className="relative w-full h-full flex flex-wrap items-start md:items-end justify-center pt-16 md:p-0">
-                        <div className="text-center font-viao text-white md:text-theme-main">
-                            <div className="text-2xl font-bold font-['Montserrat']">
-                                SAVE THE DATE
-                            </div>
-                            <div className="pt-4 md:pt-8" />
-                            <div className="text-4xl md:text-6xl flex">
-                                Đức Mạnh <span className="ml-1 md:ml-4" />
-                                <IoHeart color="white" />
-                                <span className="mr-1 md:mr-3" />
-                                Thùy Linh
-                            </div>
-                            <div className="pt-4 md:pt-8" />
-                            <div className=" px-4 md:px-0">
-                                <div className="font-viao font-semibold font-['Montserrat'] text-3xl md:text-4xl px-8 py-2 md:py-4 border-2 border-white shadow-2xl focus:bg-white focus:text-transparent active:bg-white active:text-border-theme-main transition-all">
-                                    22.09.2024
-                                </div>
-                            </div>
-                        </div>
+                        {show ? (
+                            <>
+                                <motion.div
+                                    initial={{ opacity: 0 }}
+                                    whileInView={{ opacity: 1 }}
+                                    animate={{ opacity: 0 }}
+                                    transition={{
+                                        type: 'spring',
+                                        stiffness: 100,
+                                        ease: 'linear',
+                                        duration: 3000,
+                                    }}
+                                >
+                                    {head}
+                                </motion.div>
+                            </>
+                        ) : (
+                            <>{head}</>
+                        )}
                     </div>
                 </div>
                 <div

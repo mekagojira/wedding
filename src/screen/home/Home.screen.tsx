@@ -43,7 +43,7 @@ export const HomeScreen = () => {
             className="min-h-screen overflow-x-hidden page bg-theme-bg"
         >
             {!init && <Loading show={init < 1} />}
-            <HomeHead setInit={initOk} />
+            <HomeHead setInit={initOk} show={init >= 1} />
 
             <WeGettingMarried />
             <SaveTheDate />
