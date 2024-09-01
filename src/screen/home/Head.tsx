@@ -110,24 +110,36 @@ export const HomeHead = ({
                         style={{ display: 'none' }} // Hide the image element
                     />
                     <div className="relative w-full h-full flex flex-wrap items-end justify-center pb-20">
-                        <div className="text-center font-viao text-theme-bg">
-                            <div className="text-2xl font-bold font-['Montserrat']">
-                                SAVE THE DATE
-                            </div>
-                            <div className="pt-4 md:pt-8" />
-                            <div className="text-4xl md:text-6xl flex">
-                                Đức Mạnh <span className="ml-1 md:ml-4" />
-                                <IoHeart color="white" />
-                                <span className="mr-1 md:mr-3" />
-                                Thùy Linh
-                            </div>
-                            <div className="pt-4 md:pt-8" />
-                            <div className=" px-4 md:px-0">
-                                <div className="font-viao font-semibold font-['Montserrat'] text-3xl md:text-4xl px-8 py-2 md:py-4 border-2 border-theme-bg shadow-2xl focus:bg-white focus:text-transparent active:bg-white active:text-border-theme-main transition-all">
-                                    22.09.2024
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            animate={{ opacity: 0 }}
+                            transition={{
+                                type: 'spring',
+                                stiffness: 100,
+                                ease: 'linear',
+                                duration: 3000,
+                            }}
+                        >
+                            <div className="text-center font-viao text-theme-bg">
+                                <div className="text-2xl font-bold font-['Montserrat']">
+                                    SAVE THE DATE
+                                </div>
+                                <div className="pt-4 md:pt-8" />
+                                <div className="text-4xl md:text-6xl flex">
+                                    Đức Mạnh <span className="ml-1 md:ml-4" />
+                                    <IoHeart color="white" />
+                                    <span className="mr-1 md:mr-3" />
+                                    Thùy Linh
+                                </div>
+                                <div className="pt-4 md:pt-8" />
+                                <div className=" px-4 md:px-0">
+                                    <div className="font-viao font-semibold font-['Montserrat'] text-3xl md:text-4xl px-8 py-2 md:py-4 border-2 border-theme-bg shadow-2xl focus:bg-white focus:text-transparent active:bg-white active:text-border-theme-main transition-all">
+                                        22.09.2024
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>
