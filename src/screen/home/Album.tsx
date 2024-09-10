@@ -117,6 +117,7 @@ export default function Album() {
                             ref={gallery}
                             onClick={fullscreen}
                             useBrowserFullscreen={false}
+                            showThumbnails={false}
                         />
                     </div>
                     <div className="py-8">

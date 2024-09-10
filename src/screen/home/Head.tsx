@@ -55,7 +55,6 @@ export default function HomeHead() {
                         alt="Background"
                         onLoad={() => {
                             setFetched(true)
-                            console.log('FETCHed')
                         }}
                         style={{ display: 'none' }}
                     />
