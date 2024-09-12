@@ -14,7 +14,7 @@ export default function HomeHead() {
 
     const desktopFullSizeImg = '/img/manhlinh-banner-02.JPG'
     const desktopPreviewImg = '/img/manhlinh-banner-2-min.jpg'
-    const fullSizeImg = '/img/manhlinh-banner-01.JPG'
+    const fullSizeImg = '/img/manhlinh-banner-01.jpg'
 
     const source = {
         date: '22.09.2024',
