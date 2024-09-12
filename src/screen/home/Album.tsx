@@ -72,6 +72,7 @@ const imgs = [
         thumbnailHeight: 40,
         thumbnailWidth: 40,
         thumbnailLoading: loadingType,
+        loading: loadingType,
     }))
 
 export default function Album() {
