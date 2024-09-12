@@ -113,6 +113,7 @@ export function Loading({ setInit }: { setInit: () => void }) {
             <img
                 src={'/img/manhlinh-banner-03.jpg'}
                 alt="Background"
+                loading="eager"
                 onLoad={() => setInit()}
                 style={{ display: 'none' }}
             />
