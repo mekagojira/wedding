@@ -48,7 +48,7 @@ export default function Congratulation() {
                 <div
                     className="w-full h-screen"
                     style={{
-                        backgroundImage: `url(img/${item.bg})`,
+                        backgroundImage: `url(${item.bg})`,
                         backgroundPosition: 'center center',
                         backgroundSize: 'cover',
                     }}

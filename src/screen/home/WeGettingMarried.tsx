@@ -53,7 +53,7 @@ export default function WeGettingMarried() {
                         <div className="flex p-4 justify-center items-center">
                             <img
                                 alt={''}
-                                src={'/img/manhlinh-03.JPG'}
+                                src={'/gallery/DSC03991.jpg'}
                                 className="shadow-lg rounded md:w-1/2 shadow-xl"
                             />
                         </div>

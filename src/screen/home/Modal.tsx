@@ -72,7 +72,7 @@ export default function Modal() {
                         onSubmit={submit}
                         className="w-full h-full max-w-96 rounded-lg shadow-lg bg-cover bg-center px-4 py-8 flex flex-col justify-end"
                         style={{
-                            backgroundImage: 'url(/img/bg-003.jpg)',
+                            backgroundImage: 'url(/gallery-thumb/DSC03235.jpg)',
                             // backgroundPositionY: '85px',
                         }}
                     >
