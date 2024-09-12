@@ -1,6 +1,30 @@
 import { IoHeart } from 'react-icons/io5'
+import { useEffect, useState } from 'react'
+
+function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window
+    return {
+        width,
+        height,
+    }
+}
 
 export function Loading({ setInit }: { setInit: () => void }) {
+    const [windowDimensions, setWindowDimensions] = useState(
+        getWindowDimensions(),
+    )
+
+    useEffect(() => {
+        const d = getWindowDimensions()
+        if (d.width >= 768) setInit()
+
+        setWindowDimensions(d)
+    }, [])
+
+    const isDesktop = windowDimensions.width >= 768
+
+    if (isDesktop) return <></>
+
     return (
         <>
             <div

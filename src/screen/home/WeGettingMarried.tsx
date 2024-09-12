@@ -39,26 +39,39 @@ export default function WeGettingMarried() {
                         <span className="">We are getting married</span>
                         {heart(false)}
                     </div>
-                    <div className="flex p-4 justify-center items-center">
-                        <img
-                            alt={''}
-                            src={'/img/manhlinh-03.JPG'}
-                            className="shadow-lg rounded md:w-1/2 shadow-xl"
-                        />
-                    </div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        animate={{ opacity: 0 }}
+                        transition={{
+                            type: 'spring',
+                            stiffness: 100,
+                            ease: 'linear',
+                            duration: 3000,
+                        }}
+                    >
+                        <div className="flex p-4 justify-center items-center">
+                            <img
+                                alt={''}
+                                src={'/img/manhlinh-03.JPG'}
+                                className="shadow-lg rounded md:w-1/2 shadow-xl"
+                            />
+                        </div>
+                    </motion.div>
                     <div className="text-center text-theme-main font-['Corinthia'] italic text-5xl md:text-7xl py-8">
                         Đức Mạnh -Thùy Linh
                     </div>
                     <div className="container mx-auto px-4 md:px-0 flex items-center justify-center">
                         <div className="md:w-1/2">
                             <motion.div
-                                initial={{ x: 0, y: 200 }}
-                                whileInView={{ x: 0, y: 0 }}
-                                animate={{ x: 0, y: 200 }}
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                animate={{ opacity: 0 }}
                                 transition={{
                                     type: 'spring',
                                     stiffness: 100,
                                     ease: 'linear',
+                                    duration: 3000,
                                 }}
                             >
                                 <div className="box-e md:p-8 text-justify text-theme-second font-viao text-lg md:text-xl">

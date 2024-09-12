@@ -16,6 +16,11 @@ export default function HomeHead() {
     const desktopPreviewImg = '/img/manhlinh-banner-2-min.jpg'
     const fullSizeImg = '/img/manhlinh-banner-01.JPG'
 
+    const source = {
+        date: '22.09.2024',
+        location: 'W.Jardin - 307 Nguyễn Văn Linh',
+    }
+
     const [img] = useState(images[0])
 
     const head = (
@@ -33,7 +38,10 @@ export default function HomeHead() {
             <div className="pt-4 md:pt-8" />
             <div className=" px-4 md:px-0">
                 <div className="font-viao font-semibold font-['Montserrat'] text-3xl md:text-4xl px-8 py-2 md:py-4 border-2 border-white shadow-2xl focus:bg-white focus:text-transparent active:bg-white active:text-border-theme-main transition-all">
-                    22.09.2024
+                    {source.date}
+                </div>
+                <div className="mt-2 font-viao font-semibold font-['Montserrat'] text-xl md:text-4xl px-8 py-2 md:py-4 focus:bg-white focus:text-transparent active:bg-white active:text-border-theme-main transition-all">
+                    {source.location}
                 </div>
             </div>
         </div>
@@ -85,10 +93,11 @@ export default function HomeHead() {
                     }}
                 >
                     <img
-                        loading="lazy"
+                        loading="eager"
                         src={desktopFullSizeImg}
                         alt="Background"
                         onLoad={() => {
+                            console.log('FETCHED')
                             setDesktopFetched(true)
                         }}
                         style={{ display: 'none' }} // Hide the image element
@@ -119,7 +128,10 @@ export default function HomeHead() {
                                 <div className="pt-4 md:pt-8" />
                                 <div className=" px-4 md:px-0">
                                     <div className="font-viao font-semibold font-['Montserrat'] text-3xl md:text-4xl px-8 py-2 md:py-4 border-2 border-theme-bg shadow-2xl focus:bg-white focus:text-transparent active:bg-white active:text-border-theme-main transition-all">
-                                        22.09.2024
+                                        {source.date}
+                                    </div>
+                                    <div className="font-viao mt-2 font-semibold font-['Montserrat'] text-3xl md:text-4xl px-8 py-2 md:py-4 focus:bg-white focus:text-transparent active:bg-white active:text-border-theme-main transition-all">
+                                        {source.location}
                                     </div>
                                 </div>
                             </div>
