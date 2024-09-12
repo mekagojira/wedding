@@ -1,5 +1,5 @@
 import { Section } from 'component/section/Section.tsx'
-import ImageGallery from 'react-image-gallery'
+import ImageGallery, { ReactImageGalleryItem } from 'react-image-gallery'
 import 'react-image-gallery/styles/scss/image-gallery.scss'
 import { useEffect, useRef, useState } from 'react'
 import { Divider } from 'component/section/Divider.tsx'
@@ -67,6 +67,8 @@ const imgs = [
         thumbnail: `/gallery-thumb/${item}`,
         originalAlt: `${i}`,
         thumbnailAlt: `${i}`,
+        thumbnailHeight: 40,
+        thumbnailWidth: 40,
     }))
 
 export default function Album() {
@@ -85,6 +87,17 @@ export default function Album() {
     const fullscreen = () => {
         gallery?.current?.fullScreen && gallery.current.fullScreen()
         setF(true)
+    }
+
+    const renderThumb = ({ thumbnail }: ReactImageGalleryItem) => {
+        return (
+            <div className="w-full flex justify-center">
+                <div
+                    className="w-full h-24 bg-cover bg-no-repeat bg-center"
+                    style={{ backgroundImage: `url(${thumbnail})` }}
+                />
+            </div>
+        )
     }
 
     return (
@@ -117,7 +130,7 @@ export default function Album() {
                             ref={gallery}
                             onClick={fullscreen}
                             useBrowserFullscreen={false}
-                            showThumbnails={false}
+                            renderThumbInner={renderThumb}
                         />
                     </div>
                     <div className="py-8">
