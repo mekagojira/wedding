@@ -14,6 +14,10 @@ body {
     width: 100vw;
 }
 
+.txt-shadow {
+    text-shadow: -2px 2px 5px rgba(26, 0, 0, 0.63);
+}
+
 .react-calendar__tile--active {
     background: #7a0707;
     border-radius: 9999px;

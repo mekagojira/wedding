@@ -63,17 +63,17 @@ export default function Modal() {
                         top: '2rem',
                         left: '1rem',
                         width: 'calc(100vw - 2rem)',
-                        height: 'calc(100vh - 12rem)',
+                        height: '600px',
                         // transform: openModal ? '' : 'translate(0,100vh)',
                         transition: 'all 0.2s linear',
                     }}
                 >
                     <form
                         onSubmit={submit}
-                        className="w-full h-full max-w-96 rounded-lg shadow-lg bg-cover bg-center px-4 py-8 flex flex-col justify-center"
+                        className="w-full h-full max-w-96 rounded-lg shadow-lg bg-cover bg-center px-4 py-8 flex flex-col justify-end"
                         style={{
                             backgroundImage: 'url(/img/bg-003.jpg)',
-                            backgroundPositionX: '86%',
+                            // backgroundPositionY: '85px',
                         }}
                     >
                         {/*<label className="text-theme-main">Xác nhận tham dự</label>*/}

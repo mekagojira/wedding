@@ -114,7 +114,7 @@ export default function HomeHead() {
                                 duration: 3000,
                             }}
                         >
-                            <div className="text-center font-viao text-theme-bg">
+                            <div className="text-center font-viao text-white txt-shadow">
                                 <div className="text-2xl font-bold font-['Montserrat']">
                                     SAVE THE DATE
                                 </div>
