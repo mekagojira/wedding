@@ -9,6 +9,7 @@ export default function Modal() {
     const [name, setName] = useState('')
     const [phone, setPhone] = useState('')
     const [guests, setGuests] = useState('')
+    const [tour, setTour] = useState<boolean>(false)
     const [loading, setLoading] = useState<boolean>(false)
 
     const toggle = () => setOpenModal(!openModal)
@@ -19,7 +20,7 @@ export default function Modal() {
 
     const send = async () => {
         try {
-            await axios.post(endpoint, { name, phone, guests })
+            await axios.post(endpoint, { name, phone, guests, tour: !tour })
         } catch (e) {
             console.error(e)
         }
@@ -41,7 +42,7 @@ export default function Modal() {
 
     return (
         <>
-            <div className="fixed right-0 bottom-0 p-4">
+            <div className="fixed right-0 bottom-0 p-4 font-['Inter']">
                 <button
                     onClick={toggle}
                     className="motion-safe:animate-bounce rounded drop-shadow-2xl relative py-2 shadow-2xl px-4 bg-theme-main text-theme-bg flex items-center"
@@ -50,7 +51,7 @@ export default function Modal() {
                     <span className="pl-2">Xác nhận tham dự</span>
                 </button>
             </div>
-            <div className="font-['Inter']">
+            <div>
                 {openModal && (
                     <div
                         className="fixed top-0 left-0 w-screen h-screen bg-gray-900 z-10 opacity-90"
@@ -70,7 +71,7 @@ export default function Modal() {
                 >
                     <form
                         onSubmit={submit}
-                        className="w-full h-full max-w-96 rounded-lg shadow-lg bg-cover bg-center px-4 py-8 flex flex-col justify-end"
+                        className="w-full h-full font-old-standard text-lg max-w-96 rounded-lg shadow-lg bg-cover bg-center px-4 py-8 flex flex-col justify-end"
                         style={{
                             backgroundImage: 'url(/gallery-thumb/DSC03235.jpg)',
                             // backgroundPositionY: '85px',
@@ -97,6 +98,44 @@ export default function Modal() {
                             value={guests}
                             onChange={e => setGuests(e.target.value)}
                         />
+                        <div className="pt-4" />
+                        <div className="text-white flex items-center">
+                            <div className="flex items-center">
+                                <label className="flex items-center cursor-pointer relative">
+                                    <input
+                                        type="checkbox"
+                                        checked={tour}
+                                        onChange={e =>
+                                            setTour(e.target.checked)
+                                        }
+                                        className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-red-600 checked:border-red-600"
+                                        id="check2"
+                                    />
+                                    <span className="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="h-3.5 w-3.5"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            stroke="currentColor"
+                                            stroke-width="1"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                    </span>
+                                </label>
+                            </div>
+                            <span
+                                className="pl-2 txt-shadow"
+                                onClick={() => setTour(!tour)}
+                            >
+                                Đi cùng Chuyến xe yêu thương ?
+                            </span>
+                        </div>
                         <div className="pt-4" />
                         <button
                             className="bg-theme-main w-full py-2 uppercase font-bold text-theme-bg"
