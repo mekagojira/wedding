@@ -44,7 +44,7 @@ export default function Modal() {
             <div className="fixed right-0 bottom-0 p-4">
                 <button
                     onClick={toggle}
-                    className="motion-safe:animate-bounce relative py-2 shadow-2xl px-4 bg-theme-main text-theme-bg flex items-center"
+                    className="motion-safe:animate-bounce rounded drop-shadow-2xl relative py-2 shadow-2xl px-4 bg-theme-main text-theme-bg flex items-center"
                 >
                     <TbClover />
                     <span className="pl-2">Xác nhận tham dự</span>
