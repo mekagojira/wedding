@@ -6,7 +6,7 @@ export default function Congratulation() {
             num: '18042014',
             img: '/img/qr-linh.jpg',
             text: 'Đến cô dâu',
-            bg: 'linh-bg-1.jpg',
+            bg: '/gallery/DSC02860.jpg',
         },
         {
             bank: 'Techcombank',
@@ -14,7 +14,7 @@ export default function Congratulation() {
             num: '9868281198',
             img: '/img/qr-manh.jpeg',
             text: 'Đến chú rể',
-            bg: 'manh-bg-1.jpg',
+            bg: '/gallery/DSC02990.jpg',
         },
     ]
 
@@ -23,7 +23,7 @@ export default function Congratulation() {
             <div
                 key={item.num}
                 style={{
-                    backgroundImage: `url(img/${item.bg})`,
+                    backgroundImage: `url(${item.bg})`,
                     backgroundPosition: 'center center',
                     backgroundSize: 'cover',
                 }}
