@@ -23,7 +23,7 @@ export function Loading({ setInit }: { setInit: () => void }) {
 
     const isDesktop = windowDimensions.width >= 768
 
-    if (isDesktop) return <></>
+    if (isDesktop) return null
 
     return (
         <>
@@ -113,7 +113,6 @@ export function Loading({ setInit }: { setInit: () => void }) {
             <img
                 src={'/img/manhlinh-banner-03.jpg'}
                 alt="Background"
-                loading="lazy"
                 onLoad={() => setInit()}
                 style={{ display: 'none' }}
             />
