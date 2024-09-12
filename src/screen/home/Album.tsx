@@ -5,6 +5,8 @@ import { useEffect, useRef, useState } from 'react'
 import { Divider } from 'component/section/Divider.tsx'
 import { IoIosClose } from 'react-icons/io'
 
+const loadingType: 'lazy' | 'eager' | undefined = 'eager'
+
 const imgs = [
     'DSC01663.jpg',
     'DSC01736.jpg',
@@ -69,6 +71,7 @@ const imgs = [
         thumbnailAlt: `${i}`,
         thumbnailHeight: 40,
         thumbnailWidth: 40,
+        thumbnailLoading: loadingType,
     }))
 
 export default function Album() {
