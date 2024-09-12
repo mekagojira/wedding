@@ -4,10 +4,7 @@ import { Section } from 'component/section/Section.tsx'
 import { motion } from 'framer-motion'
 
 export default function HomeHead() {
-    const images = [
-        '/img/manhlinh-banner-03.jpg',
-        '/img/manhlinh-banner-02.JPG',
-    ]
+    const images = ['/img/head-mobile.png', '/img/manhlinh-banner-02.JPG']
 
     const [fetched, setFetched] = useState(false)
     const [desktopFetch, setDesktopFetched] = useState(false)
