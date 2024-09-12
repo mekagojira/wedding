@@ -118,7 +118,7 @@ export default function Album() {
                 </div>
             )}
             <Section>
-                <div className="flex items-center flex-col">
+                <div className="container mx-auto flex items-center flex-col">
                     <div className="pt-2" />
                     <div
                         onClick={fullscreen}
@@ -127,7 +127,7 @@ export default function Album() {
                         Album cưới
                     </div>
                     <div className="pt-4" />
-                    <div className="mx-auto container">
+                    <div className="md:w-2/3">
                         <ImageGallery
                             items={imgs}
                             ref={gallery}
