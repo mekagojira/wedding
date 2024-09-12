@@ -55,7 +55,7 @@ export default function HomeHead() {
                     style={{
                         backgroundImage: `url(${fetched ? fullSizeImg : img})`,
                         backgroundSize: 'cover',
-                        backgroundPosition: fetched ? 'center' : 'center 20%',
+                        backgroundPosition: fetched ? 'center 0' : 'center 20%',
                     }}
                 >
                     <img
