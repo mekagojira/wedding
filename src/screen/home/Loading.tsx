@@ -105,7 +105,7 @@ export function Loading({ setInit }: { setInit: () => void }) {
                 </div>
             </div>
             <img
-                src={'/img/manhlinh-banner-03-min.jpg'}
+                src={'/img/manhlinh-banner-01.jpg'}
                 alt="Background"
                 loading="eager"
                 style={{ display: 'none' }}
