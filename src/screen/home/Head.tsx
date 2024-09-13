@@ -63,7 +63,7 @@ export default function HomeHead() {
                         }}
                         style={{ display: 'none' }}
                     />
-                    <div className="relative w-full h-full flex flex-wrap items-start md:items-end justify-center pt-16 md:p-0">
+                    {fetched ? null : <div className="relative w-full h-full flex flex-wrap items-start md:items-end justify-center pt-16 md:p-0">
                         <>
                             <motion.div
                                 initial={{ opacity: 0 }}
@@ -79,7 +79,7 @@ export default function HomeHead() {
                                 {head}
                             </motion.div>
                         </>
-                    </div>
+                    </div>}
                 </div>
                 <div
                     className="h-full transition-all hidden md:block"
