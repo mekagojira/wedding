@@ -32,7 +32,7 @@ export default function Congratulation() {
                 <div className="w-full flex flex-col items-center justify-center pt-4 my-8">
                     {/*<div className="uppercase text-lg">{item.text}</div>*/}
                     <div className="pt-4" />
-                    <img src={item.img} className="w-32 shadow" alt={''} />
+                    <img src={item.img} className="w-40 shadow" alt={''} />
                     <div className={'pt-8'} />
                     <div className="pt-1">Ngân hàng: {item.bank}</div>
                     <div className="pt-1">Tên tài khoản: {item.name}</div>
