@@ -20,7 +20,7 @@ export default function Modal() {
 
     const send = async () => {
         try {
-            await axios.post(endpoint, { name, phone, guests, tour: !tour })
+            await axios.post(endpoint, { name, phone, guests, tour })
         } catch (e) {
             console.error(e)
         }
@@ -36,7 +36,8 @@ export default function Modal() {
         toggle()
         setName('')
         setPhone('')
-        setPhone('')
+        setGuests('')
+        setTour(false)
         alert('Xác nhận thành công')
     }
 
