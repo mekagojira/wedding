@@ -48,7 +48,7 @@ export default function Modal() {
                 <a
                     href="https://maps.app.goo.gl/647QUG1uvUhA96DW9"
                     target="_blank"
-                    className="drop-shadow-2xl relative py-2 shadow-2xl px-4 rounded bg-theme-bg text-theme-main flex items-center w-48 font-viao"
+                    className="drop-shadow-2xl relative py-2 shadow-2xl px-4 rounded bg-theme-bg text-theme-main flex items-center w-full font-viao"
                 >
                     <LuMapPin />
                     <span className="pl-2">Xem bản đồ</span>
@@ -56,7 +56,7 @@ export default function Modal() {
                 <div className="pt-2" />
                 <button
                     onClick={toggle}
-                    className="drop-shadow-2xl relative py-2 shadow-2xl px-4 rounded bg-theme-main text-theme-bg flex items-center w-48 font-viao"
+                    className="drop-shadow-2xl relative py-2 shadow-2xl px-4 rounded bg-theme-main text-theme-bg flex items-center w-full font-viao"
                 >
                     <TbClover />
                     <span className="pl-2">Xác nhận tham dự</span>
