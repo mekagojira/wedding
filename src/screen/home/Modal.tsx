@@ -44,7 +44,7 @@ export default function Modal() {
 
     return (
         <>
-            <div className="fixed right-0 bottom-0 p-4 font-['Inter'] text-md font-bold">
+            <div className="fixed right-0 bottom-0 p-4 font-['Inter'] text-md">
                 <a
                     href="https://maps.app.goo.gl/647QUG1uvUhA96DW9"
                     target="_blank"
