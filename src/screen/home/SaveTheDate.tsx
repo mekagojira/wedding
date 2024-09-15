@@ -36,7 +36,12 @@ export default function SaveTheDate() {
                         }}
                     >
                         <div className=" font-lovers text-4xl md:text-8xl my-4 md:my-8 text-theme-main">
-                            W.Jardin
+                            <a
+                                target="_blank"
+                                href="https://maps.app.goo.gl/647QUG1uvUhA96DW9"
+                            >
+                                W.Jardin
+                            </a>
                         </div>
                         <div className="text-md">307 Nguyễn Văn Linh</div>
                         <div className="text-md">

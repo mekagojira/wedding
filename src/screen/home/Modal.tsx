@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { TbClover } from 'react-icons/tb'
+import { LuMapPin } from 'react-icons/lu'
 
 const endpoint = 'https://wedding-api.manh.moe/plan/register'
 
@@ -43,10 +44,19 @@ export default function Modal() {
 
     return (
         <>
-            <div className="fixed right-0 bottom-0 p-4 font-['Inter']">
+            <div className="fixed right-0 bottom-0 p-4 font-['Inter'] text-md font-bold">
+                <a
+                    href="https://maps.app.goo.gl/647QUG1uvUhA96DW9"
+                    target="_blank"
+                    className="drop-shadow-2xl relative py-2 shadow-2xl px-4 rounded bg-theme-bg text-theme-main flex items-center w-44 font-viao"
+                >
+                    <LuMapPin />
+                    <span className="pl-2">Xem bản đồ</span>
+                </a>
+                <div className="pt-2" />
                 <button
                     onClick={toggle}
-                    className="motion-safe:animate-bounce rounded drop-shadow-2xl relative py-2 shadow-2xl px-4 bg-theme-main text-theme-bg flex items-center"
+                    className="drop-shadow-2xl relative py-2 shadow-2xl px-4 rounded bg-theme-main text-theme-bg flex items-center w-44 font-viao"
                 >
                     <TbClover />
                     <span className="pl-2">Xác nhận tham dự</span>
