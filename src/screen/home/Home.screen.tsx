@@ -1,7 +1,7 @@
 import { useState, lazy } from 'react'
 import { Loading } from 'screen/home/Loading.tsx'
 
-const Congratulation = lazy(() => import('./Congratulation'))
+// const Congratulation = lazy(() => import('./Congratulation'))
 const WeGettingMarried = lazy(() => import('./WeGettingMarried'))
 const SaveTheDate = lazy(() => import('./SaveTheDate'))
 const Album = lazy(() => import('./Album'))
@@ -44,7 +44,6 @@ export const HomeScreen = () => {
             <WeGettingMarried />
             <SaveTheDate />
             <Album />
-            <Congratulation />
             <Foot />
             <Modal />
         </main>
